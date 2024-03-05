@@ -4,70 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="address the issue of memory leaking on the bullets remove">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/BadTank1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/BadTank2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/GoodTank1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/GoodTank2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bulletD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bulletL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bulletR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bulletU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/bulletU.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/e9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/missileLD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/missileLU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/missileRD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/missileRU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/square6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankLD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankLU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankRD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankRU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/tankU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ImageTest.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="load the tank images to the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709598010102</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="load the tank images to the project">
+      <created>1709677176994</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709677176994</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +209,7 @@
     <MESSAGE value="Second Commit on tank, add paint" />
     <MESSAGE value="Intro the bullet" />
     <MESSAGE value="address the issue of memory leaking on the bullets remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="address the issue of memory leaking on the bullets remove" />
+    <MESSAGE value="load the tank images to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="load the tank images to the project" />
   </component>
 </project>

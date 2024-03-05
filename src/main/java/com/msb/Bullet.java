@@ -11,6 +11,14 @@ public class Bullet {
     private int x, y;
     private TankFrame tf;
 
+    public boolean isLive() {
+        return live;
+    }
+
+    public void setLive(boolean live) {
+        this.live = live;
+    }
+
     public Bullet(int x, int y, DIR dir, TankFrame tf) {
         this.dir = dir;
         this.x = x;
@@ -19,9 +27,9 @@ public class Bullet {
     }
 
     public void paint(Graphics g) {
-        if(!live){
-             tf.bullets.remove(this);
-        }
+//        if(!live){
+//             tf.bullets.remove(this);
+//        }
         Color c = g.getColor();
         g.setColor(Color.RED);
         g.fillOval(x, y, WIDTH, HEIGHT);

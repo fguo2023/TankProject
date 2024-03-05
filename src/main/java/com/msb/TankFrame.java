@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class TankFrame extends Frame {
 
@@ -57,6 +58,12 @@ public class TankFrame extends Frame {
         // use b.paint(g) will have the concurrent issue. since use the iterator will have the concurrent issue!!!!
         for (int i = 0; i < bullets.size(); i++) {
             bullets.get(i).paint(g);
+        }
+        for(Iterator<Bullet> it = bullets.iterator(); it.hasNext();){
+            Bullet b = it.next();
+            if(!b.isLive()){
+                it.remove();
+            }
         }
     }
 

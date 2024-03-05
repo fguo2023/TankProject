@@ -6,7 +6,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class TankFrame extends Frame {
 
@@ -14,9 +13,9 @@ public class TankFrame extends Frame {
     static final int GAME_HEIGHT = 600;
 
     ArrayList<Bullet> bullets = new ArrayList<>();
-    Tank myTank = new Tank(200, 200, DIR.DOWN, this);
-    //Bullet b = new Bullet(300, 300, DIR.UP);
-    ArrayList<Tank> enemiesTanks = new ArrayList<>();
+    Tank myTank = new Tank(200, 400, DIR.UP, this);
+    ArrayList<Tank> tanks = new ArrayList<>();
+
     public TankFrame() {
         setSize(GAME_WIDTH, GAME_HEIGHT);
         setResizable(false);
@@ -53,11 +52,13 @@ public class TankFrame extends Frame {
         Color c = g.getColor();
         g.setColor(Color.WHITE);
         g.drawString("bullet count: " + bullets.size(), 10, 60);
+        g.drawString("enemy tanks count: " + tanks.size(), 10, 80);
         g.setColor(c);
         myTank.paint(g);
         // use b.paint(g) will have the concurrent issue. since use the iterator will have the concurrent issue!!!!
-        //initEnemiesTank(g);
-
+        for (int i = 0; i < tanks.size(); i++) {
+            tanks.get(i).paint(g);
+        }
         for (int i = 0; i < bullets.size(); i++) {
             bullets.get(i).paint(g);
         }
@@ -67,15 +68,10 @@ public class TankFrame extends Frame {
 //                it.remove();
 //            }
 //        }
-    }
-
-    private void initEnemiesTank(Graphics g) {
-        Random random = new Random();
-        int x = random.nextInt(GAME_WIDTH);
-        int y = random.nextInt(GAME_HEIGHT);
-        enemiesTanks.add(new Tank(x, y, DIR.DOWN, this));
-        for (int i = 0; i < enemiesTanks.size(); i++) {
-            enemiesTanks.get(i).paint(g);
+        for (int i = 0; i < bullets.size(); i++) {
+            for (int j = 0; j < tanks.size(); j++) {
+                bullets.get(i).collideWith(tanks.get(j));
+            }
         }
     }
 

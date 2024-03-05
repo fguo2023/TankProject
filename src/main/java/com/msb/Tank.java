@@ -1,13 +1,17 @@
 package com.msb;
 
 import java.awt.*;
+import java.util.Random;
 
 public class Tank {
     private int x, y;
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.tankD.getWidth();
     public static final int HEIGHT = ResourceMgr.tankD.getHeight();
-    private static final int SPEED = 5;
+    private static final int SPEED = 1;
+    private Random random = new Random();
+
+    private Group group = Group.BAD;
 
     private TankFrame tf = null;
 
@@ -17,11 +21,19 @@ public class Tank {
         return moving;
     }
 
+    public Group getGroup() {
+        return group;
+    }
+
+    public void setGroup(Group group) {
+        this.group = group;
+    }
+
     public void setMoving(boolean moving) {
         this.moving = moving;
     }
 
-    private boolean moving = false;
+    private boolean moving = true;
 
     public int getX() {
         return x;
@@ -47,11 +59,12 @@ public class Tank {
         this.dir = dir;
     }
 
-    public Tank(int x, int y, DIR dir,TankFrame tf) {
+    public Tank(int x, int y, DIR dir, Group group, TankFrame tf) {
         super();
         this.x = x;
         this.y = y;
         this.dir = dir;
+        this.group = group;
         this.tf = tf;
     }
    public void paint(Graphics g){
@@ -89,12 +102,16 @@ public class Tank {
                 x -= SPEED;
                 break;
         }
+
+        if(random.nextInt(10) > 8){
+            this.fire();
+        }
     }
 
     public void fire() {
         int bX = this.x + Tank.WIDTH /2 - Bullet.WIDTH/2;
         int bY = this.y + Tank.HEIGHT /2 - Bullet.HEIGHT/2;
-        tf.bullets.add(new Bullet(bX, bY, this.dir, this.tf));
+        tf.bullets.add(new Bullet(bX, bY, this.dir, this.group, this.tf));
     }
 
     public void die() {

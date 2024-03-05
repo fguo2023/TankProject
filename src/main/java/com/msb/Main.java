@@ -5,7 +5,7 @@ public class Main {
         TankFrame tf = new TankFrame();
         // init enemy tanks
         for (int i = 0; i < 5; i++) {
-            tf.tanks.add(new Tank(50 + i * 80, 200, DIR.DOWN, tf));
+            tf.tanks.add(new Tank(50 + i * 80, 200, DIR.UP, Group.BAD, tf));
         }
         while (true) {
             Thread.sleep(50);

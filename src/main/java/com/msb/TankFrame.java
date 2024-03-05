@@ -13,7 +13,7 @@ public class TankFrame extends Frame {
     static final int GAME_HEIGHT = 600;
 
     ArrayList<Bullet> bullets = new ArrayList<>();
-    Tank myTank = new Tank(200, 400, DIR.UP, this);
+    Tank myTank = new Tank(200, 400, DIR.UP, Group.GOOD, this);
     ArrayList<Tank> tanks = new ArrayList<>();
 
     public TankFrame() {

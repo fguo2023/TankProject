@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add bullet images to the project">
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="bullet and tank collide">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" afterDir="false" />
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709677380122</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bullet and tank collide">
+      <created>1709679182673</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709679182673</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +228,7 @@
     <MESSAGE value="address the issue of memory leaking on the bullets remove" />
     <MESSAGE value="load the tank images to the project" />
     <MESSAGE value="add bullet images to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bullet images to the project" />
+    <MESSAGE value="bullet and tank collide" />
+    <option name="LAST_COMMIT_MESSAGE" value="bullet and tank collide" />
   </component>
 </project>

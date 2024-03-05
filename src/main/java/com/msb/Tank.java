@@ -59,7 +59,7 @@ public class Tank {
         this.dir = dir;
     }
 
-    public Tank(int x, int y, DIR dir, Group group, TankFrame tf) {
+    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
         super();
         this.x = x;
         this.y = y;

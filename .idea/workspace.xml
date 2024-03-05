@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="bullet and tank collide">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/Group.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the random fire on the enemy tanks">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/Explode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" afterDir="false" />
     </list>
@@ -60,6 +60,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\TankTank\TankProject\src\main\resources" />
       <recent name="C:\TankTank\TankProject\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.msb" />
     </key>
   </component>
   <component name="RunManager" selected="Application.com.msb.Main">
@@ -182,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709679182673</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add the random fire on the enemy tanks">
+      <created>1709680127991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709680127991</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +239,7 @@
     <MESSAGE value="load the tank images to the project" />
     <MESSAGE value="add bullet images to the project" />
     <MESSAGE value="bullet and tank collide" />
-    <option name="LAST_COMMIT_MESSAGE" value="bullet and tank collide" />
+    <MESSAGE value="add the random fire on the enemy tanks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the random fire on the enemy tanks" />
   </component>
 </project>

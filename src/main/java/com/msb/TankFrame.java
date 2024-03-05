@@ -5,17 +5,19 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 public class TankFrame extends Frame {
 
-    int x = 200;
-    int y = 200;
+    static final int GAME_WIDTH = 800;
+    static final int GAME_HEIGHT = 600;
 
-    Tank myTank = new Tank(x, y, DIR.DOWN);
-    Bullet b = new Bullet(300, 300, DIR.UP);
+    ArrayList<Bullet> bullets = new ArrayList<>();
+    Tank myTank = new Tank(200, 200, DIR.DOWN, this);
+    //Bullet b = new Bullet(300, 300, DIR.UP);
 
     public TankFrame() {
-        setSize(800, 600);
+        setSize(GAME_WIDTH, GAME_HEIGHT);
         setResizable(false);
         setTitle("tank war");
         setVisible(true);
@@ -28,10 +30,34 @@ public class TankFrame extends Frame {
         });
     }
 
+    // 使用双缓冲解决闪烁问题
+    Image offScreenImage = null;
+
+    @Override
+    public void update(Graphics g) {
+        if (offScreenImage == null) {
+            offScreenImage = this.createImage(GAME_WIDTH, GAME_HEIGHT);
+        }
+        Graphics goffScreen = offScreenImage.getGraphics();
+        Color c = goffScreen.getColor();
+        goffScreen.setColor(Color.BLACK);
+        goffScreen.fillRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
+        goffScreen.setColor(c);
+        paint(goffScreen);
+        g.drawImage(offScreenImage, 0, 0, null);
+    }
+
     @Override
     public void paint(Graphics g) {
+        Color c = g.getColor();
+        g.setColor(Color.WHITE);
+        g.drawString("bullet count: " + bullets.size(), 10, 60);
+        g.setColor(c);
         myTank.paint(g);
-        b.paint(g);
+        // use b.paint(g) will have the concurrent issue. since use the iterator will have the concurrent issue!!!!
+        for (int i = 0; i < bullets.size(); i++) {
+            bullets.get(i).paint(g);
+        }
     }
 
     class MyKeyListener extends KeyAdapter {
@@ -77,6 +103,9 @@ public class TankFrame extends Frame {
                     break;
                 case KeyEvent.VK_DOWN:
                     bU = false;
+                    break;
+                case KeyEvent.VK_CONTROL:
+                    myTank.fire();
                     break;
                 default:
                     break;

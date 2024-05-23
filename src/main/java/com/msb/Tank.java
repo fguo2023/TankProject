@@ -1,7 +1,5 @@
 package com.msb;
 
-import com.sun.javafx.scene.paint.GradientUtils;
-
 import java.awt.*;
 import java.util.Random;
 
@@ -12,6 +10,8 @@ public class Tank {
     public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
     private static final int SPEED = 6;
     private Random random = new Random();
+
+    Rectangle rect = new Rectangle();
 
     // private int speed =  SPEED;
     private Group group = Group.BAD;
@@ -69,6 +69,10 @@ public class Tank {
         this.dir = dir;
         this.group = group;
         //if(this.group == Group.GOOD) this.speed = speed;
+        rect.x = this.x;
+        rect.y = this.y;
+        rect.width = WIDTH;
+        rect.height = HEIGHT;
         this.tf = tf;
     }
 
@@ -111,9 +115,14 @@ public class Tank {
         if (this.group == Group.BAD && random.nextInt(100) > 95) {
             this.fire();
         }
+
         if (group == Group.BAD && random.nextInt(100) > 95)
             randomDir();
+
         boundsCheck();
+        // update rect
+        rect.x = this.x;
+        rect.y = this.y;
     }
 
     private void boundsCheck() {

@@ -144,8 +144,8 @@ public class TankFrame extends Frame {
             myTank.setMoving(true);
             if (bL) myTank.setDir(DIR.LEFT);
             if (bR) myTank.setDir(DIR.RIGHT);
-            if (bU) myTank.setDir(DIR.UP);
-            if (bD) myTank.setDir(DIR.DOWN);
+            if (bU) myTank.setDir(DIR.DOWN);
+            if (bD) myTank.setDir(DIR.UP);
         }
     }
 }

@@ -1,11 +1,9 @@
-import com.msb.DIR;
-import com.sun.java.swing.plaf.windows.WindowsTabbedPaneUI;
+import com.msb.tank.DIR;
 import org.junit.Test;
 
 import javax.imageio.ImageIO;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Random;

@@ -1,5 +1,7 @@
-package com.msb;
+package com.msb.tank;
 
+//Tank will have two subsidiaries: Design Pattern and Network
+// this is the dp branch
 public class Main {
     public static final String INIT_TANK_COUNT = "initTankCount";
 

@@ -1,4 +1,4 @@
-package com.msb;
+package com.msb.tank;
 
 import java.awt.*;
 

@@ -3,7 +3,7 @@ package com.msb;
 import java.awt.*;
 
 public class Bullet {
-    private static final int SPEED = 6;
+    private static final int SPEED = 15;
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
     Rectangle rect = new Rectangle();

@@ -1,12 +1,15 @@
 package com.msb;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+
 import java.awt.*;
 
 public class Bullet {
-    private static final int SPEED = 15;
+    private static final int SPEED = PropertyMgr.getIntValue(Constants.BULLET_SPEED);;
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
     Rectangle rect = new Rectangle();
+
     private boolean living = true;
     private DIR dir;
     private int x, y;

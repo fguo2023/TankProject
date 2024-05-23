@@ -9,11 +9,13 @@ import java.util.ArrayList;
 
 public class TankFrame extends Frame {
 
-    static final int GAME_WIDTH = 800;
-    static final int GAME_HEIGHT = 600;
+    static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
+    static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
 
     ArrayList<Bullet> bullets = new ArrayList<>();
-    Tank myTank = new Tank(200, 400, DIR.UP, 5, Group.GOOD, this);
+
+    private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
+    Tank myTank = new Tank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
     ArrayList<Tank> tanks = new ArrayList<>();
 
     ArrayList<Explode> explodes = new ArrayList<>();

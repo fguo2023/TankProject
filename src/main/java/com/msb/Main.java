@@ -1,10 +1,12 @@
 package com.msb;
 
 public class Main {
+    public static final String INIT_TANK_COUNT = "initTankCount";
+
     public static void main(String[] args) throws InterruptedException {
         TankFrame tf = new TankFrame();
         // init enemy tanks
-        int initTankCount = Integer.parseInt((String) PropertyMgr.get("initTankCount"));
+        int initTankCount = PropertyMgr.getIntValue(INIT_TANK_COUNT);
         for (int i = 0; i < initTankCount; i++) {
             tf.tanks.add(new Tank(50 + i * 80, 200, DIR.UP, 1, Group.BAD, tf));
         }

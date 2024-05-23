@@ -1,5 +1,7 @@
 package com.msb;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+
 import java.awt.*;
 import java.util.Random;
 
@@ -8,7 +10,7 @@ public class Tank {
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
-    private static final int SPEED = 6;
+    private static final int SPEED = PropertyMgr.getIntValue(Constants.TANK_SPEED);
     private Random random = new Random();
 
     Rectangle rect = new Rectangle();

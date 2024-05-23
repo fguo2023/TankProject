@@ -4,17 +4,31 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyMgr {
+    //    private static class PropertyMgrHolder{
+//        private final static PropertyMgr INSTANCE = new PropertyMgr();
+//    }
     static Properties props = new Properties();
 
-    static{
+    private static final PropertyMgr INSTANCE = new PropertyMgr();
+
+    // implement the lady load
+    public static PropertyMgr getInstance() {
+        return INSTANCE;
+    }
+
+    private PropertyMgr() {
+    }
+
+    static {
         try {
             props.load(PropertyMgr.class.getClassLoader().getResourceAsStream("config"));
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public static Object get(String key){
-        if(props == null ) return null;
+
+    public static Object get(String key) {
+        if (props == null) return null;
         return props.get(key);
     }
 

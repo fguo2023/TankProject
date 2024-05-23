@@ -1,5 +1,7 @@
 package com.msb.tank;
 
+import com.msb.tank.strategy.FireOneBullet;
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -12,12 +14,11 @@ public class TankFrame extends Frame {
     static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
     static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
 
-    ArrayList<Bullet> bullets = new ArrayList<>();
+    public ArrayList<Bullet> bullets = new ArrayList<>();
 
     private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
     Tank myTank = new Tank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
     ArrayList<Tank> tanks = new ArrayList<>();
-
     ArrayList<Explode> explodes = new ArrayList<>();
 
     public TankFrame() {
@@ -82,7 +83,6 @@ public class TankFrame extends Frame {
                 bullets.get(i).collideWith(tanks.get(j));
             }
         }
-
     }
 
     class MyKeyListener extends KeyAdapter {

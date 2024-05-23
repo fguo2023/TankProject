@@ -1,6 +1,11 @@
 package com.msb.tank;
 
+import com.msb.tank.strategy.FireOneBullet;
+import com.msb.tank.strategy.FireStrategy;
+import com.sun.xml.internal.bind.v2.TODO;
+
 import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 public class Tank {
@@ -62,13 +67,23 @@ public class Tank {
         this.dir = dir;
     }
 
-    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
+    FireStrategy fs;
+
+    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf)  {
         super();
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
         //if(this.group == Group.GOOD) this.speed = speed;
+        if(group == Group.GOOD){
+            //String goodFSName = (String) PropertyMgr.get(Constants.GOODFS);
+//            TODO make it dynamically
+            fs = new FireOneBullet();
+        }else{
+            fs = new FireOneBullet();
+        }
+
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;
@@ -137,9 +152,10 @@ public class Tank {
     }
 
     public void fire() {
-        int bX = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
-        int bY = this.y + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
-        tf.bullets.add(new Bullet(bX, bY, this.dir, this.group, this.tf));
+        fs.fire(this, tf);
+//        int bX = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
+//        int bY = this.y + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
+//        tf.bullets.add(new Bullet(bX, bY, this.dir, this.group, this.tf));
     }
 
     public void die() {

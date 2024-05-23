@@ -1,5 +1,7 @@
 package com.msb.tank;
 
+import com.msb.tank.strategy.FireStrategy;
+
 import java.awt.*;
 
 public class Bullet {
@@ -14,6 +16,8 @@ public class Bullet {
     private TankFrame tf;
     private Group group;
 
+    FireStrategy fs;
+
     public Group getGroup() {
         return group;
     }
@@ -26,8 +30,8 @@ public class Bullet {
         this.dir = dir;
         this.x = x;
         this.y = y;
-        this.group = group;
         this.tf = tf;
+        this.group = group;
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;

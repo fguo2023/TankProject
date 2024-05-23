@@ -5,6 +5,15 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class ResourceMgr {
+
+    private ResourceMgr(){}
+
+    private static final ResourceMgr INSTANCE = new ResourceMgr();
+
+    public static ResourceMgr getInstance() {
+        return INSTANCE;
+    }
+
     public static BufferedImage goodTankL, goodTankU, goodTankR, goodTankD;
     public static BufferedImage badTankL, badTankU, badTankR, badTankD;
     public static BufferedImage bulletL, bulletR, bulletU, bulletD;

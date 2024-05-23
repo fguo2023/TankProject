@@ -14,7 +14,6 @@ public class TankFrame extends Frame {
 
     ArrayList<Bullet> bullets = new ArrayList<>();
     Tank myTank = new Tank(200, 400, DIR.UP, 5, Group.GOOD, this);
-    Explode e = new Explode(100,100, this);
     ArrayList<Tank> tanks = new ArrayList<>();
 
     ArrayList<Explode> explodes = new ArrayList<>();
@@ -82,7 +81,6 @@ public class TankFrame extends Frame {
             }
         }
 
-        e.paint(g);
     }
 
     class MyKeyListener extends KeyAdapter {
@@ -101,10 +99,10 @@ public class TankFrame extends Frame {
                 case KeyEvent.VK_RIGHT:
                     bR = true;
                     break;
-                case KeyEvent.VK_UP:
+                case KeyEvent.VK_DOWN:
                     bD = true;
                     break;
-                case KeyEvent.VK_DOWN:
+                case KeyEvent.VK_UP:
                     bU = true;
                     break;
                 default:
@@ -124,10 +122,10 @@ public class TankFrame extends Frame {
                     bR = false;
                     break;
                 case KeyEvent.VK_UP:
-                    bD = false;
+                    bU = false;
                     break;
                 case KeyEvent.VK_DOWN:
-                    bU = false;
+                    bD = false;
                     break;
                 case KeyEvent.VK_CONTROL:
                     myTank.fire();

@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the random fire on the enemy tanks">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/Explode.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="paint a explosion">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/ImageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/ResourceMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/TankTank/TankProject/src"
+    "last_opened_file_path": "C:/TankTank/TankProject"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -192,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709680127991</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="paint a explosion">
+      <created>1709681634316</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709681634316</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +244,7 @@
     <MESSAGE value="add bullet images to the project" />
     <MESSAGE value="bullet and tank collide" />
     <MESSAGE value="add the random fire on the enemy tanks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the random fire on the enemy tanks" />
+    <MESSAGE value="paint a explosion" />
+    <option name="LAST_COMMIT_MESSAGE" value="paint a explosion" />
   </component>
 </project>

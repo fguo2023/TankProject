@@ -17,6 +17,8 @@ public class TankFrame extends Frame {
     Explode e = new Explode(100,100, this);
     ArrayList<Tank> tanks = new ArrayList<>();
 
+    ArrayList<Explode> explodes = new ArrayList<>();
+
     public TankFrame() {
         setSize(GAME_WIDTH, GAME_HEIGHT);
         setResizable(false);
@@ -54,6 +56,7 @@ public class TankFrame extends Frame {
         g.setColor(Color.WHITE);
         g.drawString("bullet count: " + bullets.size(), 10, 60);
         g.drawString("enemy tanks count: " + tanks.size(), 10, 80);
+        g.drawString("explosion count: " + explodes.size(), 10, 100);
         g.setColor(c);
         myTank.paint(g);
         // use b.paint(g) will have the concurrent issue. since use the iterator will have the concurrent issue!!!!
@@ -62,6 +65,10 @@ public class TankFrame extends Frame {
         }
         for (int i = 0; i < bullets.size(); i++) {
             bullets.get(i).paint(g);
+        }
+
+        for (int i = 0; i < explodes.size(); i++) {
+            explodes.get(i).paint(g);
         }
 //        for(Iterator<Bullet> it = bullets.iterator(); it.hasNext();){
 //            Bullet b = it.next();

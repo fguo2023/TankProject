@@ -69,7 +69,9 @@ public class Bullet {
             living = false;
         }
     }
-
+/*
+when the bullet intersects with the tank, then
+ */
     public void collideWith(Tank tank) {
         if(this.group == tank.getGroup()) return;
 
@@ -79,6 +81,7 @@ public class Bullet {
         if(rect1.intersects(rect2)){
             tank.die();
             this.die();
+            tf.explodes.add(new Explode(x, y, tf));
         }
     }
 

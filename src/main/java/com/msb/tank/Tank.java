@@ -1,6 +1,4 @@
-package com.msb;
-
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+package com.msb.tank;
 
 import java.awt.*;
 import java.util.Random;

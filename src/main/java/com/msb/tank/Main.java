@@ -1,4 +1,4 @@
-package com.msb;
+package com.msb.tank;
 
 public class Main {
     public static final String INIT_TANK_COUNT = "initTankCount";

@@ -7,6 +7,7 @@ import javax.swing.plaf.ComponentInputMapUIResource;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 import static org.junit.Assert.*;
@@ -49,6 +50,13 @@ public class ImageTest {
             }
         });
         System.out.println(arr);
-
+    }
+    @Test
+    public void testClassReflection() throws Exception {
+        Class<?> clazz = Class.forName("com.msb.tank.strategy.FireOneBullet");
+        if(clazz != null){
+            clazz.getDeclaredConstructor().newInstance();
+        }
+        assertNotNull(clazz);
     }
 }

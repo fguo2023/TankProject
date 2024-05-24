@@ -1,7 +1,8 @@
 package com.msb.tank;
 
 public class Constants {
-    public static final String GOODFS = "FireOneBullet";
+    public static final String FIRE_FOUR_DIRECTION = "fireFourDirection";
+    public static final String FIRE_ONE_DIRECTION = "fireOneDirection";
     public static String INIT_TANK_COUNT = "initTankCount";
     public static String BULLET_SPEED = "bulletSpeed";
     public static String TANK_SPEED = "tankSpeed";

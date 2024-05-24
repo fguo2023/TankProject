@@ -4,4 +4,5 @@ tankSpeed=10
 bulletSpeed=15
 gameWidth=720
 gameHeight=1080
-goodFS=FireOneBullet
+fireFourDirection=com.msb.tank.strategy.FireFourDirection
+fireOneDirection=com.msb.tank.strategy.FireOneBullet

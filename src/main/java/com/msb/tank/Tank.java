@@ -67,7 +67,7 @@ public class Tank {
         this.dir = dir;
     }
 
-    FireStrategy fs = new FireOneBullet();
+    FireStrategy fs = null;
 
     public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf)  {
         super();
@@ -75,14 +75,16 @@ public class Tank {
         this.y = y;
         this.dir = dir;
         this.group = group;
-        //if(this.group == Group.GOOD) this.speed = speed;
-//        if(group == Group.GOOD){
-//            //String goodFSName = (String) PropertyMgr.get(Constants.GOODFS);
-////            TODO make it dynamically
-//            fs = FireOneBullet.getInstance();
-//        }else{
-//            fs = FireOneBullet.getInstance();
-//        }
+        if(group == Group.GOOD){
+            String fireFourDirection = (String) PropertyMgr.get(Constants.FIRE_FOUR_DIRECTION);
+            try {
+                fs = (FireStrategy) Class.forName(fireFourDirection).getDeclaredConstructor().newInstance();
+            } catch (Exception e) {
+               e.printStackTrace();
+            }
+        }else{
+            fs = new FireOneBullet();
+        }
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;

@@ -2,11 +2,12 @@ import com.msb.tank.DIR;
 import org.junit.Test;
 
 import javax.imageio.ImageIO;
+import javax.swing.plaf.ComponentInputMapUIResource;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Random;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -37,5 +38,17 @@ public class ImageTest {
         System.out.println(DIR.values()[3]);
     }
 
+    @Test
+    public void testComparator(){
+        List<Integer> arr = Arrays.asList(2,3,4,1);
+        arr.sort(new Comparator<Integer>() { // strategy pattern using Comparator
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                if(o1.equals(o2)) return 0;
+                return o1 < o2 ? -1 : 1;
+            }
+        });
+        System.out.println(arr);
 
+    }
 }

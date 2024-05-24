@@ -21,7 +21,7 @@ public class Tank {
     // private int speed =  SPEED;
     private Group group = Group.BAD;
 
-    private TankFrame tf = null;
+    public TankFrame tf = null;
 
     private boolean living = true;
 
@@ -67,7 +67,7 @@ public class Tank {
         this.dir = dir;
     }
 
-    FireStrategy fs;
+    FireStrategy fs = new FireOneBullet();
 
     public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf)  {
         super();
@@ -76,14 +76,13 @@ public class Tank {
         this.dir = dir;
         this.group = group;
         //if(this.group == Group.GOOD) this.speed = speed;
-        if(group == Group.GOOD){
-            //String goodFSName = (String) PropertyMgr.get(Constants.GOODFS);
-//            TODO make it dynamically
-            fs = new FireOneBullet();
-        }else{
-            fs = new FireOneBullet();
-        }
-
+//        if(group == Group.GOOD){
+//            //String goodFSName = (String) PropertyMgr.get(Constants.GOODFS);
+////            TODO make it dynamically
+//            fs = FireOneBullet.getInstance();
+//        }else{
+//            fs = FireOneBullet.getInstance();
+//        }
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;
@@ -152,10 +151,7 @@ public class Tank {
     }
 
     public void fire() {
-        fs.fire(this, tf);
-//        int bX = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
-//        int bY = this.y + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
-//        tf.bullets.add(new Bullet(bX, bY, this.dir, this.group, this.tf));
+        fs.fire(this);
     }
 
     public void die() {

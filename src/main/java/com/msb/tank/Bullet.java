@@ -5,7 +5,8 @@ import com.msb.tank.strategy.FireStrategy;
 import java.awt.*;
 
 public class Bullet {
-    private static final int SPEED = PropertyMgr.getIntValue(Constants.BULLET_SPEED);;
+    private static final int SPEED = PropertyMgr.getIntValue(Constants.BULLET_SPEED);
+    ;
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
     Rectangle rect = new Rectangle();
@@ -30,19 +31,20 @@ public class Bullet {
         this.dir = dir;
         this.x = x;
         this.y = y;
-        this.tf = tf;
         this.group = group;
+        this.tf = tf;
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
+        tf.bullets.add(this);
     }
 
     public void paint(Graphics g) {
-        if(!living){
-             tf.bullets.remove(this);
+        if (!living) {
+            tf.bullets.remove(this);
         }
-        switch (dir){
+        switch (dir) {
             case LEFT:
                 g.drawImage(ResourceMgr.bulletL, x, y, null);
                 break;
@@ -78,20 +80,21 @@ public class Bullet {
         rect.x = this.x;
         rect.y = this.y;
 
-        if(x < 0 || y < 0 || x >= TankFrame.GAME_WIDTH || y >= TankFrame.GAME_HEIGHT){
+        if (x < 0 || y < 0 || x >= TankFrame.GAME_WIDTH || y >= TankFrame.GAME_HEIGHT) {
             living = false;
         }
     }
-/*
-when the bullet intersects with the tank, then
- */
+
+    /*
+    when the bullet intersects with the tank, then
+     */
     public void collideWith(Tank tank) {
-        if(this.group == tank.getGroup()) return;
+        if (this.group == tank.getGroup()) return;
 
         //TODO: 用一个rect来记录子弹的位置
         // Rectangle rect1 = new Rectangle(this.x, this.y, WIDTH, HEIGHT);
         // Rectangle rect2 = new Rectangle(tank.getX(), tank.getY(), Tank.WIDTH, Tank.HEIGHT);
-        if(rect.intersects(tank.rect)){
+        if (rect.intersects(tank.rect)) {
             tank.die();
             this.die();
             int ex = tank.getX() + Tank.WIDTH / 2 - Explode.WIDTH / 2;

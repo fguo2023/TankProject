@@ -7,12 +7,12 @@ import com.msb.tank.TankFrame;
 
 public class FireFourDirection implements FireStrategy {
     @Override
-    public void fire(Tank tank, TankFrame tf) {
+    public void fire(Tank tank) {
         int bX = tank.getX() + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
         int bY = tank.getY() + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
         DIR[] dirs = DIR.values();
         for (DIR dir : dirs) {
-            tf.bullets.add(new Bullet(bX, bY, dir, tank.getGroup(), tf));
+           new Bullet(bX, bY, dir, tank.getGroup(), tank.tf);
         }
     }
 }

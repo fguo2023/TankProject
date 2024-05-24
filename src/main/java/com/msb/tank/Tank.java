@@ -69,20 +69,27 @@ public class Tank {
 
     FireStrategy fs = null;
 
-    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf)  {
+    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
         super();
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
-        if(group == Group.GOOD){
+        if (group == Group.GOOD) {
             String fireFourDirection = (String) PropertyMgr.get(Constants.FIRE_FOUR_DIRECTION);
             try {
                 fs = (FireStrategy) Class.forName(fireFourDirection).getDeclaredConstructor().newInstance();
             } catch (Exception e) {
-               e.printStackTrace();
+                e.printStackTrace();
             }
-        }else{
+        } else {
+           /* use lambda expression is fine
+                    fs = (tank) -> {
+                int bX = tank.getX() + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
+                int bY = tank.getY() + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
+                new Bullet(bX, bY, tank.getDir(), tank.getGroup(), tank.tf);
+            };
+            or use fs = new FireOneBullet();*/
             fs = new FireOneBullet();
         }
         rect.x = this.x;

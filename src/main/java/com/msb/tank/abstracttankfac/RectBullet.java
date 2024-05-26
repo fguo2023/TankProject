@@ -1,12 +1,11 @@
-package com.msb.tank;
+package com.msb.tank.abstracttankfac;
 
-import com.msb.tank.abstracttankfac.BaseBullet;
-import com.msb.tank.abstracttankfac.BaseTank;
+import com.msb.tank.*;
 import com.msb.tank.strategy.FireStrategy;
 
 import java.awt.*;
 
-public class Bullet extends BaseBullet {
+public class RectBullet extends BaseBullet {
     private static final int SPEED = PropertyMgr.getIntValue(Constants.BULLET_SPEED);
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
@@ -28,7 +27,7 @@ public class Bullet extends BaseBullet {
         this.group = group;
     }
 
-    public Bullet(int x, int y, DIR dir, Group group, TankFrame tf) {
+    public RectBullet(int x, int y, DIR dir, Group group, TankFrame tf) {
         this.dir = dir;
         this.x = x;
         this.y = y;
@@ -46,20 +45,25 @@ public class Bullet extends BaseBullet {
         if (!living) {
             tf.bullets.remove(this);
         }
-        switch (dir) {
-            case LEFT:
-                g.drawImage(ResourceMgr.bulletL, x, y, null);
-                break;
-            case RIGHT:
-                g.drawImage(ResourceMgr.bulletR, x, y, null);
-                break;
-            case DOWN:
-                g.drawImage(ResourceMgr.bulletU, x, y, null);
-                break;
-            case UP:
-                g.drawImage(ResourceMgr.bulletD, x, y, null);
-                break;
-        }
+        //switch (dir) {
+//            case LEFT:
+//                g.drawImage(ResourceMgr.bulletL, x, y, null);
+//                break;
+//            case RIGHT:
+//                g.drawImage(ResourceMgr.bulletR, x, y, null);
+//                break;
+//            case DOWN:
+//                g.drawImage(ResourceMgr.bulletU, x, y, null);
+//                break;
+//            case UP:
+//                g.drawImage(ResourceMgr.bulletD, x, y, null);
+//                break;
+
+        //}
+        Color c = g.getColor();
+        g.setColor(Color.yellow);
+        g.fillRect(x, y, 20, 20);
+        g.setColor(c);
         move();
     }
 
@@ -90,7 +94,6 @@ public class Bullet extends BaseBullet {
     /*
     when the bullet intersects with the tank, then
      */
-    @Override
     public void collideWith(BaseTank tank) {
         if (this.group == tank.getGroup()) return;
         //TODO: 用一个rect来记录子弹的位置
@@ -111,3 +114,4 @@ public class Bullet extends BaseBullet {
         this.living = false;
     }
 }
+

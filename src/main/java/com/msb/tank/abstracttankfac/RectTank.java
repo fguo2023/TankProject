@@ -1,6 +1,6 @@
-package com.msb.tank;
+package com.msb.tank.abstracttankfac;
 
-import com.msb.tank.abstracttankfac.BaseTank;
+import com.msb.tank.*;
 import com.msb.tank.strategy.FireOneBullet;
 import com.msb.tank.strategy.FireStrategy;
 
@@ -8,7 +8,7 @@ import java.awt.*;
 import java.util.Random;
 
 // Tank can use the abstract factory to create diff multiple type of tank
-public class Tank extends BaseTank {
+public class RectTank extends BaseTank {
     private int x, y;
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
@@ -16,7 +16,7 @@ public class Tank extends BaseTank {
     private static final int SPEED = PropertyMgr.getIntValue(Constants.TANK_SPEED);
     private Random random = new Random();
 
-   // public Rectangle rect = new Rectangle();
+    public Rectangle rect = new Rectangle();
 
     // private int speed =  SPEED;
     private Group group = Group.BAD;
@@ -43,21 +43,21 @@ public class Tank extends BaseTank {
 
     private boolean moving = true;
 
-//    public int getX() {
-//        return x;
-//    }
-//
-//    public void setX(int x) {
-//        this.x = x;
-//    }
-//
-//    public int getY() {
-//        return y;
-//    }
-//
-//    public void setY(int y) {
-//        this.y = y;
-//    }
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
 
     public DIR getDir() {
         return dir;
@@ -69,7 +69,7 @@ public class Tank extends BaseTank {
 
     FireStrategy fs = null;
 
-    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
+    public RectTank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
         super();
         this.x = x;
         this.y = y;
@@ -102,20 +102,24 @@ public class Tank extends BaseTank {
     @Override
     public void paint(Graphics g) {
         if (!living) tf.tanks.remove(this);
-        switch (dir) {
-            case LEFT:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);
-                break;
-            case RIGHT:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankR : ResourceMgr.badTankR, x, y, null);
-                break;
-            case UP:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankD : ResourceMgr.badTankD, x, y, null);
-                break;
-            case DOWN:
-                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankU : ResourceMgr.badTankU, x, y, null);
-                break;
-        }
+//        switch (dir) {
+//            case LEFT:
+//                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);
+//                break;
+//            case RIGHT:
+//                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankR : ResourceMgr.badTankR, x, y, null);
+//                break;
+//            case UP:
+//                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankD : ResourceMgr.badTankD, x, y, null);
+//                break;
+//            case DOWN:
+//                g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankU : ResourceMgr.badTankU, x, y, null);
+//                break;
+//        }
+        Color c = g.getColor();
+        g.setColor(group == Group.GOOD ? Color.RED : Color.YELLOW);
+        g.fillRect(x, y, 40, 40);
+        g.setColor(c);
         move();
     }
 
@@ -152,8 +156,8 @@ public class Tank extends BaseTank {
     private void boundsCheck() {
         if (this.x < 0) x = 0;
         if (this.y < 30) y = 30;
-        if (this.x > TankFrame.GAME_WIDTH - Tank.WIDTH) x = TankFrame.GAME_WIDTH - Tank.WIDTH;
-        if (this.y > TankFrame.GAME_HEIGHT - Tank.HEIGHT) y = TankFrame.GAME_HEIGHT - Tank.HEIGHT;
+        if (this.x > TankFrame.GAME_WIDTH - RectTank.WIDTH) x = TankFrame.GAME_WIDTH - RectTank.WIDTH;
+        if (this.y > TankFrame.GAME_HEIGHT - RectTank.HEIGHT) y = TankFrame.GAME_HEIGHT - RectTank.HEIGHT;
     }
 
     private void randomDir() {
@@ -161,7 +165,12 @@ public class Tank extends BaseTank {
     }
 
     public void fire() {
-        fs.fire(this);
+        // this is the fire strategy pattern
+        //fs.fire(this);
+        int bX = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
+        int bY = this.y + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
+        //new Bullet(bX, bY, tank.getDir(), tank.getGroup(), tank.tf);
+        this.tf.gameFactory.createBullet(bX, bY, this.dir, this.group, this.tf);
     }
 
     public void die() {

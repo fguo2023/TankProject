@@ -6,3 +6,4 @@ gameWidth=720
 gameHeight=1080
 fireFourDirection=com.msb.tank.strategy.FireFourDirection
 fireOneDirection=com.msb.tank.strategy.FireOneBullet
+factory=com.msb.tank.abstracttankfac.RectFactory

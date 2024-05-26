@@ -16,7 +16,7 @@ public class Explode extends BaseExplode {
         this.y = y;
         this.tf = tf;
     }
-
+    @Override
     public void paint(Graphics g) {
         g.drawImage(ResourceMgr.explodes[step++ % ResourceMgr.explodes.length], x, y, null);
         if (step >= ResourceMgr.explodes.length)

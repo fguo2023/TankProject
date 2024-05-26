@@ -4,6 +4,7 @@ import com.msb.tank.Bullet;
 import com.msb.tank.DIR;
 import com.msb.tank.Tank;
 import com.msb.tank.TankFrame;
+import com.msb.tank.abstracttankfac.GameFactory;
 
 public class FireFourDirection implements FireStrategy {
     @Override
@@ -12,7 +13,7 @@ public class FireFourDirection implements FireStrategy {
         int bY = tank.getY() + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
         DIR[] dirs = DIR.values();
         for (DIR dir : dirs) {
-           new Bullet(bX, bY, dir, tank.getGroup(), tank.tf);
+            tank.tf.gameFactory.createBullet(bX, bY, dir, tank.getGroup(), tank.tf);
         }
     }
 }

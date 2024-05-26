@@ -8,4 +8,5 @@ public class Constants {
     public static String TANK_SPEED = "tankSpeed";
     public static String GAME_WIDTH = "gameWidth";
     public static String GAME_HEIGHT = "gameHeight";
+    public static String FACTORY_NAME = "factory";
 }

@@ -1,25 +1,31 @@
 package com.msb.tank;
 
-import com.msb.tank.strategy.FireOneBullet;
+import com.msb.tank.abstracttankfac.*;
 
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class TankFrame extends Frame {
 
-    static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
-    static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
+    public static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
+    public static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
 
-    public ArrayList<Bullet> bullets = new ArrayList<>();
+
+    public ArrayList<BaseBullet> bullets = new ArrayList<>();
 
     private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
     Tank myTank = new Tank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
-    ArrayList<Tank> tanks = new ArrayList<>();
-    ArrayList<Explode> explodes = new ArrayList<>();
+    public ArrayList<BaseTank> tanks = new ArrayList<>();
+    public ArrayList<BaseExplode> explodes = new ArrayList<>();
+
+    // init the Factory
+    //new RectFactory(); // could be created in the config file.
+    public GameFactory gameFactory;
 
     public TankFrame() {
         setSize(GAME_WIDTH, GAME_HEIGHT);
@@ -33,6 +39,11 @@ public class TankFrame extends Frame {
                 System.exit(0);
             }
         });
+        try {
+            gameFactory = (GameFactory) Class.forName((String) PropertyMgr.get(Constants.FACTORY_NAME)).getDeclaredConstructor().newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // 使用双缓冲解决闪烁问题

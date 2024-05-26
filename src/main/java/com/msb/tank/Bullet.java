@@ -1,10 +1,11 @@
 package com.msb.tank;
 
+import com.msb.tank.abstracttankfac.BaseBullet;
 import com.msb.tank.strategy.FireStrategy;
 
 import java.awt.*;
 
-public class Bullet {
+public class Bullet extends BaseBullet {
     private static final int SPEED = PropertyMgr.getIntValue(Constants.BULLET_SPEED);
     ;
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();

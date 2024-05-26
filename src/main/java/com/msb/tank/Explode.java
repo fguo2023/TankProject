@@ -1,8 +1,10 @@
 package com.msb.tank;
 
+import com.msb.tank.abstracttankfac.BaseExplode;
+
 import java.awt.*;
 
-public class Explode {
+public class Explode extends BaseExplode {
     private int x, y;
     public static final int WIDTH = ResourceMgr.explodes[0].getWidth();
     public static final int HEIGHT = ResourceMgr.explodes[0].getHeight();

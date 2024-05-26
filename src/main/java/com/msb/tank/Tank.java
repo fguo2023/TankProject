@@ -1,14 +1,14 @@
 package com.msb.tank;
 
+import com.msb.tank.abstracttankfac.BaseTank;
 import com.msb.tank.strategy.FireOneBullet;
 import com.msb.tank.strategy.FireStrategy;
-import com.sun.xml.internal.bind.v2.TODO;
 
 import java.awt.*;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public class Tank {
+// Tank can use the abstract factory to create diff multiple type of tank
+public class Tank extends BaseTank {
     private int x, y;
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();

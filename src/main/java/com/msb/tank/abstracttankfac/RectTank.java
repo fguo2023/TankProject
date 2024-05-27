@@ -117,7 +117,7 @@ public class RectTank extends BaseTank {
 //                break;
 //        }
         Color c = g.getColor();
-        g.setColor(group == Group.GOOD ? Color.RED : Color.YELLOW);
+        g.setColor(group == Group.GOOD ? Color.RED : Color.BLUE);
         g.fillRect(x, y, 40, 40);
         g.setColor(c);
         move();

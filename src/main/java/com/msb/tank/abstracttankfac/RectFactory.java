@@ -4,10 +4,10 @@ import com.msb.tank.DIR;
 import com.msb.tank.Group;
 import com.msb.tank.TankFrame;
 
-public class RectFactory extends GameFactory{
+public class RectFactory extends GameFactory {
     @Override
     public BaseTank createTank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
-        return new RectTank(x,y, dir, speed,group,tf);
+        return new RectTank(x, y, dir, speed, group, tf);
     }
 
     @Override
@@ -17,6 +17,6 @@ public class RectFactory extends GameFactory{
 
     @Override
     public BaseExplode createExplode(int x, int y, TankFrame tf) {
-        return new RectExplode(x,y, tf);
+        return new RectExplode(x, y, tf);
     }
 }

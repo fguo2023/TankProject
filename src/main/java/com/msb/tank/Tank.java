@@ -161,7 +161,11 @@ public class Tank extends BaseTank {
     }
 
     public void fire() {
-        fs.fire(this);
+        //fs.fire(this);
+        int bX = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
+        int bY = this.y + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
+        //new Bullet(bX, bY, tank.getDir(), tank.getGroup(), tank.tf);
+        this.tf.gameFactory.createBullet(bX, bY, this.dir, this.group, this.tf);
     }
 
     public void die() {

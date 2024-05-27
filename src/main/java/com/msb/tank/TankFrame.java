@@ -7,7 +7,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 public class TankFrame extends Frame {
@@ -15,11 +14,11 @@ public class TankFrame extends Frame {
     public static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
     public static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
 
-
     public ArrayList<BaseBullet> bullets = new ArrayList<>();
 
     private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
-    Tank myTank = new Tank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
+    //BaseTank myTank = this.gameFactory.createTank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
+    Tank myTank =  new Tank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
     public ArrayList<BaseTank> tanks = new ArrayList<>();
     public ArrayList<BaseExplode> explodes = new ArrayList<>();
 

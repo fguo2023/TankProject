@@ -10,7 +10,7 @@ public class Main {
         // init enemy tanks
         int initTankCount = PropertyMgr.getIntValue(INIT_TANK_COUNT);
         for (int i = 0; i < initTankCount; i++) {
-            tf.tanks.add(new Tank(50 + i * 80, 200, DIR.UP, 1, Group.BAD, tf));
+            tf.tanks.add(tf.gameFactory.createTank(50 + i * 80, 200, DIR.UP, 1, Group.BAD, tf));
         }
 
         while (true) {

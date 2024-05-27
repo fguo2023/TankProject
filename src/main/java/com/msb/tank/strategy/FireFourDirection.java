@@ -3,7 +3,6 @@ package com.msb.tank.strategy;
 import com.msb.tank.Bullet;
 import com.msb.tank.DIR;
 import com.msb.tank.Tank;
-import com.msb.tank.TankFrame;
 
 public class FireFourDirection implements FireStrategy {
     @Override
@@ -12,7 +11,7 @@ public class FireFourDirection implements FireStrategy {
         int bY = tank.getY() + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
         DIR[] dirs = DIR.values();
         for (DIR dir : dirs) {
-           new Bullet(bX, bY, dir, tank.getGroup(), tank.tf);
+            new Bullet(bX, bY, dir, tank.getGroup(), tank.getGm());
         }
     }
 }

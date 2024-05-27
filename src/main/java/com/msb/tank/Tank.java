@@ -2,10 +2,8 @@ package com.msb.tank;
 
 import com.msb.tank.strategy.FireOneBullet;
 import com.msb.tank.strategy.FireStrategy;
-import com.sun.xml.internal.bind.v2.TODO;
 
 import java.awt.*;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 public class Tank {
@@ -21,7 +19,13 @@ public class Tank {
     // private int speed =  SPEED;
     private Group group = Group.BAD;
 
-    public TankFrame tf = null;
+    //public TankFrame tf = null;
+
+    GameModel gm;
+
+    public GameModel getGm() {
+        return gm;
+    }
 
     private boolean living = true;
 
@@ -69,12 +73,13 @@ public class Tank {
 
     FireStrategy fs = null;
 
-    public Tank(int x, int y, DIR dir, int speed, Group group, TankFrame tf) {
+    public Tank(int x, int y, DIR dir, Group group, GameModel gm) {
         super();
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
+        this.gm = gm;
         if (group == Group.GOOD) {
             String fireFourDirection = (String) PropertyMgr.get(Constants.FIRE_FOUR_DIRECTION);
             try {
@@ -96,11 +101,11 @@ public class Tank {
         rect.y = this.y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
-        this.tf = tf;
+        //this.tf = tf;
     }
 
     public void paint(Graphics g) {
-        if (!living) tf.tanks.remove(this);
+        if (!living) gm.tanks.remove(this);
         switch (dir) {
             case LEFT:
                 g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);

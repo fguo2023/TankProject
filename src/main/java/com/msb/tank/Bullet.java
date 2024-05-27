@@ -15,6 +15,8 @@ public class Bullet {
     private DIR dir;
     private int x, y;
     private TankFrame tf;
+
+    GameModel gm;
     private Group group;
 
     FireStrategy fs;
@@ -27,22 +29,23 @@ public class Bullet {
         this.group = group;
     }
 
-    public Bullet(int x, int y, DIR dir, Group group, TankFrame tf) {
+    public Bullet(int x, int y, DIR dir, Group group, GameModel gm) {
         this.dir = dir;
         this.x = x;
         this.y = y;
         this.group = group;
-        this.tf = tf;
+        //this.tf = tf;
+        this.gm = gm;
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
-        tf.bullets.add(this);
+        gm.bullets.add(this);
     }
 
     public void paint(Graphics g) {
         if (!living) {
-            tf.bullets.remove(this);
+            gm.bullets.remove(this);
         }
         switch (dir) {
             case LEFT:
@@ -99,7 +102,7 @@ public class Bullet {
             this.die();
             int ex = tank.getX() + Tank.WIDTH / 2 - Explode.WIDTH / 2;
             int ey = tank.getY() + Tank.HEIGHT / 2 - Explode.HEIGHT / 2;
-            tf.explodes.add(new Explode(ex, ey, tf));
+            gm.explodes.add(new Explode(ex, ey, gm));
         }
     }
 

@@ -1,7 +1,5 @@
 package com.msb.tank;
 
-import com.msb.tank.strategy.FireOneBullet;
-
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;

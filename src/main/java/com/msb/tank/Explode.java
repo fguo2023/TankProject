@@ -2,7 +2,7 @@ package com.msb.tank;
 
 import java.awt.*;
 
-public class Explode {
+public class Explode extends GameObject {
     private int x, y;
     public static final int WIDTH = ResourceMgr.explodes[0].getWidth();
     public static final int HEIGHT = ResourceMgr.explodes[0].getHeight();
@@ -16,9 +16,10 @@ public class Explode {
         this.gm = gm;
     }
 
+    @Override
     public void paint(Graphics g) {
         g.drawImage(ResourceMgr.explodes[step++ % ResourceMgr.explodes.length], x, y, null);
         if (step >= ResourceMgr.explodes.length)
-            gm.explodes.remove(this);
+            gm.remove(this);
     }
 }

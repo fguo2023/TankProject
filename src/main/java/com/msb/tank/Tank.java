@@ -6,15 +6,15 @@ import com.msb.tank.strategy.FireStrategy;
 import java.awt.*;
 import java.util.Random;
 
-public class Tank {
-    private int x, y;
+public class Tank extends GameObject {
+    private int x, y, oldX, oldY;
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
     private static final int SPEED = PropertyMgr.getIntValue(Constants.TANK_SPEED);
     private Random random = new Random();
 
-    Rectangle rect = new Rectangle();
+    public Rectangle rect = new Rectangle();
 
     // private int speed =  SPEED;
     private Group group = Group.BAD;
@@ -104,8 +104,9 @@ public class Tank {
         //this.tf = tf;
     }
 
+    @Override
     public void paint(Graphics g) {
-        if (!living) gm.tanks.remove(this);
+        if (!living) gm.remove(this);
         switch (dir) {
             case LEFT:
                 g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);
@@ -123,7 +124,25 @@ public class Tank {
         move();
     }
 
+    public int getOldX() {
+        return oldX;
+    }
+
+    public void setOldX(int oldX) {
+        this.oldX = oldX;
+    }
+
+    public int getOldY() {
+        return oldY;
+    }
+
+    public void setOldY(int oldY) {
+        this.oldY = oldY;
+    }
+
     private void move() {
+        oldX = x;
+        oldY = y;
         if (!moving) return;
         switch (dir) {
             case DOWN:
@@ -170,5 +189,9 @@ public class Tank {
 
     public void die() {
         this.living = false;
+    }
+
+    public void stop() {
+        moving = false;
     }
 }

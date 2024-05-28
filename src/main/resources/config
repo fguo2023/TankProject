@@ -6,3 +6,5 @@ gameWidth=720
 gameHeight=1080
 fireFourDirection=com.msb.tank.strategy.FireFourDirection
 fireOneDirection=com.msb.tank.strategy.FireOneBullet
+#colliders collider写到config里面, 加新的墙不需要修改任何一行代码
+colliders=com.msb.tank.cor.BulletTankCollider,com.msb.tank.cor.TankTankCollider

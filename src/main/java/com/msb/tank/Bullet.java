@@ -9,6 +9,15 @@ public class Bullet extends GameObject {
     ;
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
+
+    public Rectangle getRect() {
+        return rect;
+    }
+
+    public void setRect(Rectangle rect) {
+        this.rect = rect;
+    }
+
     Rectangle rect = new Rectangle();
 
     private boolean living = true;
@@ -16,7 +25,7 @@ public class Bullet extends GameObject {
     private int x, y;
     private TankFrame tf;
 
-    GameModel gm;
+    public GameModel gm;
     private Group group;
 
     FireStrategy fs;
@@ -109,7 +118,7 @@ public class Bullet extends GameObject {
         return false;
     }
 
-    private void die() {
+    public void die() {
         this.living = false;
     }
 }

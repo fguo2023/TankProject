@@ -4,7 +4,6 @@ import com.msb.tank.Constants;
 import com.msb.tank.GameObject;
 import com.msb.tank.PropertyMgr;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;
 
 public class ColliderChain implements Collider {

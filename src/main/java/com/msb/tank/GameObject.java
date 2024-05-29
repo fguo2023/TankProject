@@ -4,8 +4,22 @@ import java.awt.*;
 
 // e.g. wall or any game object will inherit from this class
 public abstract class GameObject {
-    int x,y;
+    protected int x,y;
+    public int getX() {
+        return x;
+    }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
     public abstract void paint(Graphics g);
 
 }

@@ -21,7 +21,6 @@ public class Bullet extends GameObject {
 
     private boolean living = true;
     private DIR dir;
-    private int x, y;
 
     @Override
     public int getX() {
@@ -29,18 +28,8 @@ public class Bullet extends GameObject {
     }
 
     @Override
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    @Override
     public int getY() {
         return y;
-    }
-
-    @Override
-    public void setY(int y) {
-        this.y = y;
     }
 
     private TankFrame tf;
@@ -91,6 +80,16 @@ public class Bullet extends GameObject {
                 break;
         }
         move();
+    }
+
+    @Override
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    @Override
+    public int getHeight() {
+        return HEIGHT;
     }
 
     private void move() {

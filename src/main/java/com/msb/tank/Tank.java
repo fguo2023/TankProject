@@ -6,8 +6,8 @@ import com.msb.tank.strategy.FireStrategy;
 import java.awt.*;
 import java.util.Random;
 
-public class Tank extends GameObject {
-    private int x, y, oldX, oldY;
+public class Tank extends  GameObject {
+    private int oldX, oldY;
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
@@ -37,16 +37,8 @@ public class Tank extends GameObject {
         return x;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
     public int getY() {
         return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
     }
 
     public DIR getDir() {
@@ -108,6 +100,16 @@ public class Tank extends GameObject {
                 break;
         }
         move();
+    }
+
+    @Override
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    @Override
+    public int getHeight() {
+        return HEIGHT;
     }
 
     public int getOldX() {

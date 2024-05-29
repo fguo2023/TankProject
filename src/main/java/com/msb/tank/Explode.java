@@ -3,7 +3,6 @@ package com.msb.tank;
 import java.awt.*;
 
 public class Explode extends GameObject {
-    private int x, y;
     public static final int WIDTH = ResourceMgr.explodes[0].getWidth();
     public static final int HEIGHT = ResourceMgr.explodes[0].getHeight();
     private int step = 0;
@@ -22,5 +21,15 @@ public class Explode extends GameObject {
         g.drawImage(ResourceMgr.explodes[step++ % ResourceMgr.explodes.length], x, y, null);
         if (step >= ResourceMgr.explodes.length)
             GameModel.getInstance().remove(this);
+    }
+
+    @Override
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    @Override
+    public int getHeight() {
+        return HEIGHT;
     }
 }

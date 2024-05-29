@@ -16,6 +16,7 @@ public class ColliderChain implements Collider {
             String[] clazzNames = colliderNames.split(",");
             for (int i = 0; i < clazzNames.length; i++) {
                 try {
+                    // add all the colliders from the config files to the chain
                     String clazzName = clazzNames[i];
                     Collider c = (Collider) Class.forName(clazzName).getDeclaredConstructor().newInstance();
                     add(c);
@@ -34,6 +35,7 @@ public class ColliderChain implements Collider {
     }
 
     public boolean collide(GameObject o1, GameObject o2) {
+        // understand the logic here all the colliders call collide each other
         for (int i = 0; i < colliders.size(); i++) {
             if (!colliders.get(i).collide(o1, o2)) {
                 return false;

@@ -21,24 +21,10 @@ public class Tank extends GameObject {
 
     //public TankFrame tf = null;
 
-    GameModel gm;
-
-    public GameModel getGm() {
-        return gm;
-    }
-
     private boolean living = true;
-
-    public boolean isMoving() {
-        return moving;
-    }
 
     public Group getGroup() {
         return group;
-    }
-
-    public void setGroup(Group group) {
-        this.group = group;
     }
 
     public void setMoving(boolean moving) {
@@ -73,13 +59,16 @@ public class Tank extends GameObject {
 
     FireStrategy fs = null;
 
-    public Tank(int x, int y, DIR dir, Group group, GameModel gm) {
+    public Tank(int x, int y, DIR dir, Group group) {
         super();
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
-        this.gm = gm;
+        rect.x = this.x;
+        rect.y = this.y;
+        rect.width = WIDTH;
+        rect.height = HEIGHT;
         if (group == Group.GOOD) {
             String fireFourDirection = (String) PropertyMgr.get(Constants.FIRE_FOUR_DIRECTION);
             try {
@@ -97,16 +86,13 @@ public class Tank extends GameObject {
             or use fs = new FireOneBullet();*/
             fs = new FireOneBullet();
         }
-        rect.x = this.x;
-        rect.y = this.y;
-        rect.width = WIDTH;
-        rect.height = HEIGHT;
+        GameModel.getInstance().add(this);
         //this.tf = tf;
     }
 
     @Override
     public void paint(Graphics g) {
-        if (!living) gm.remove(this);
+        if (!living) GameModel.getInstance().remove(this);
         switch (dir) {
             case LEFT:
                 g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL : ResourceMgr.badTankL, x, y, null);

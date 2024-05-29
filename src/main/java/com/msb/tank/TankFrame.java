@@ -9,7 +9,7 @@ import java.awt.event.WindowEvent;
 public class TankFrame extends Frame {
 
     // Facade pattern
-    GameModel gm = new GameModel();
+    //GameModel gm = GameModel.getInstance();
     static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
     static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
     //private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
@@ -20,7 +20,7 @@ public class TankFrame extends Frame {
 
     @Override
     public void paint(Graphics g) {
-        gm.paint(g);
+        GameModel.getInstance().paint(g);
     }
 
     public TankFrame() {
@@ -99,7 +99,7 @@ public class TankFrame extends Frame {
                     bD = false;
                     break;
                 case KeyEvent.VK_CONTROL:
-                    gm.getMainTank().fire();
+                    GameModel.getInstance().getMainTank().fire();
                     break;
                 default:
                     break;
@@ -108,12 +108,12 @@ public class TankFrame extends Frame {
         }
 
         private void setMainTankDir() {
-            Tank myTank = gm.getMainTank();
+            Tank myTank = GameModel.getInstance().getMainTank();
             if (!bL && !bU && !bR && !bD) {
                 myTank.setMoving(false);
                 return;
             }
-            gm.getMainTank().setMoving(true);
+            GameModel.getInstance().getMainTank().setMoving(true);
             if (bL) myTank.setDir(DIR.LEFT);
             if (bR) myTank.setDir(DIR.RIGHT);
             if (bU) myTank.setDir(DIR.DOWN);

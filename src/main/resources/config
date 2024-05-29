@@ -1,9 +1,9 @@
 #tanks count at initialization
-initTankCount=5
+initTankCount=10
 tankSpeed=10
 bulletSpeed=15
-gameWidth=720
-gameHeight=1080
+gameWidth=1500
+gameHeight=1200
 fireFourDirection=com.msb.tank.strategy.FireFourDirection
 fireOneDirection=com.msb.tank.strategy.FireOneBullet
 #colliders collider写到config里面, 加新的墙不需要修改任何一行代码

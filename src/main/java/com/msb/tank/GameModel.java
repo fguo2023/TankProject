@@ -1,19 +1,32 @@
 package com.msb.tank;
 
 import com.msb.tank.cor.ColliderChain;
+
 import java.awt.*;
 import java.util.ArrayList;
 
 public class GameModel {
-    Tank myTank = new Tank(200, 400, DIR.UP, Group.GOOD, this);
+    Tank myTank;
     //    ArrayList<Tank> tanks = new ArrayList<>();
     //    ArrayList<Explode> explodes = new ArrayList<>();
     //    public ArrayList<Bullet> bullets = new ArrayList<>();
 
     //Collider collider = new BulletTankCollider();
     //Collider collider2 = new TankTankCollider();
+
+    private static final GameModel INSTANCE = new GameModel();
+
+    static {
+        INSTANCE.init();
+    }
+
+    public static GameModel getInstance() {
+        return INSTANCE;
+    }
+
     ColliderChain chain = new ColliderChain();
     ArrayList<GameObject> objects = new ArrayList<>();
+
     public void add(GameObject go) {
         this.objects.add(go);
     }
@@ -22,19 +35,22 @@ public class GameModel {
         this.objects.remove(go);
     }
 
-     /*
-     Facade pattern
-      */
-    public GameModel() {
+    private void init() {
+        myTank = new Tank(200, 400, DIR.UP, Group.GOOD);
         int initTankCount = PropertyMgr.getIntValue(Constants.INIT_TANK_COUNT);
         for (int i = 0; i < initTankCount; i++) {
-            add(new Tank(50 + i * 120, 200, DIR.UP, Group.BAD, this));
+            new Tank(50 + i * 100, 200, DIR.UP, Group.BAD);
         }
-        add(new Wall(150,150,200,50));
-        add(new Wall(550,150,200,50));
-        add(new Wall(300,300,50,200));
-        add(new Wall(550,300,50,200));
+        add(new Wall(150, 150, 200, 50));
+        add(new Wall(550, 150, 200, 50));
+        add(new Wall(300, 300, 50, 200));
+        add(new Wall(550, 300, 50, 200));
     }
+
+    /*
+    Facade pattern
+     */
+    private GameModel() {}
 
     public void paint(Graphics g) {
         Color c = g.getColor();

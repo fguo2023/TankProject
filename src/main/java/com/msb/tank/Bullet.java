@@ -6,7 +6,6 @@ import java.awt.*;
 
 public class Bullet extends GameObject {
     private static final int SPEED = PropertyMgr.getIntValue(Constants.BULLET_SPEED);
-    ;
     public static final int WIDTH = ResourceMgr.bulletD.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletD.getHeight();
 
@@ -23,6 +22,27 @@ public class Bullet extends GameObject {
     private boolean living = true;
     private DIR dir;
     private int x, y;
+
+    @Override
+    public int getX() {
+        return x;
+    }
+
+    @Override
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    @Override
+    public int getY() {
+        return y;
+    }
+
+    @Override
+    public void setY(int y) {
+        this.y = y;
+    }
+
     private TankFrame tf;
 
     public GameModel gm;
@@ -38,24 +58,23 @@ public class Bullet extends GameObject {
         this.group = group;
     }
 
-    public Bullet(int x, int y, DIR dir, Group group, GameModel gm) {
+    public Bullet(int x, int y, DIR dir, Group group) {
         this.dir = dir;
         this.x = x;
         this.y = y;
         this.group = group;
         //this.tf = tf;
-        this.gm = gm;
         rect.x = this.x;
         rect.y = this.y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
-        gm.add(this);
+        GameModel.getInstance().add(this);
     }
 
     @Override
     public void paint(Graphics g) {
         if (!living) {
-            gm.remove(this);
+            GameModel.getInstance().remove(this);
         }
         switch (dir) {
             case LEFT:
@@ -100,23 +119,24 @@ public class Bullet extends GameObject {
 
     /*
     when the bullet intersects with the tank, then
+     remove the below method, then it will decouple the Bullet and Tank class 高内聚，低耦合
      */
-    public boolean collideWith(Tank tank) {
-        if (this.group == tank.getGroup()) return false;
-
-        //TODO: 用一个rect来记录子弹的位置
-        // Rectangle rect1 = new Rectangle(this.x, this.y, WIDTH, HEIGHT);
-        // Rectangle rect2 = new Rectangle(tank.getX(), tank.getY(), Tank.WIDTH, Tank.HEIGHT);
-        if (rect.intersects(tank.rect)) {
-            tank.die();
-            this.die();
-            int ex = tank.getX() + Tank.WIDTH / 2 - Explode.WIDTH / 2;
-            int ey = tank.getY() + Tank.HEIGHT / 2 - Explode.HEIGHT / 2;
-            gm.add(new Explode(ex, ey, gm));
-            return true;
-        }
-        return false;
-    }
+//    public boolean collideWith(Tank tank) {
+//        if (this.group == tank.getGroup()) return false;
+//
+//        //TODO: 用一个rect来记录子弹的位置
+//        // Rectangle rect1 = new Rectangle(this.x, this.y, WIDTH, HEIGHT);
+//        // Rectangle rect2 = new Rectangle(tank.getX(), tank.getY(), Tank.WIDTH, Tank.HEIGHT);
+//        if (rect.intersects(tank.rect)) {
+//            tank.die();
+//            this.die();
+//            int ex = tank.getX() + Tank.WIDTH / 2 - Explode.WIDTH / 2;
+//            int ey = tank.getY() + Tank.HEIGHT / 2 - Explode.HEIGHT / 2;
+//            gm.add(new Explode(ex, ey, gm));
+//            return true;
+//        }
+//        return false;
+//    }
 
     public void die() {
         this.living = false;

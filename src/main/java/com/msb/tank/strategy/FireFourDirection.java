@@ -11,7 +11,7 @@ public class FireFourDirection implements FireStrategy {
         int bY = tank.getY() + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
         DIR[] dirs = DIR.values();
         for (DIR dir : dirs) {
-            new Bullet(bX, bY, dir, tank.getGroup(), tank.getGm());
+            new Bullet(bX, bY, dir, tank.getGroup());
         }
     }
 }

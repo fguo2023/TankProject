@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="include ImageUtil file.">
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add flyweight poolish idea">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/cglib/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v1/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v2/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v3/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v4/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v5/MyInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v5/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/TimeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/TimeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app_auto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/Explode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +33,41 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="dp" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1e1232c0-707e-48b9-a91a-7437d7b1c7a8" />
+        <option name="url" value="https://github.com/fguo2023/TankProject.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,30 +89,46 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/TankTank/TankProject"
+    "last_opened_file_path": "C:/TankTank/TankProject/src/main/java/com/msb/tank/spring/v2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.msb.tank.observer.v9" />
+      <recent name="com.msb.tank.observer.v8" />
+      <recent name="com.msb.tank.observer" />
+      <recent name="com.msb.tank.abstractfactory" />
+      <recent name="com.msb.tank.factorymethod" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\TankTank\TankProject\src" />
-      <recent name="C:\TankTank\TankProject\src\main\resources\images" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\spring\v2" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\cglib" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\v5" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\v4" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\v3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\TankTank\TankProject\src\main\resources" />
       <recent name="C:\TankTank\TankProject\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.msb" />
+      <recent name="com.msb.tank.observer.v9" />
+      <recent name="com.msb.tank.observer.v7" />
+      <recent name="com.msb.tank.observer.v6" />
+      <recent name="com.msb.tank.decorator" />
+      <recent name="com.msb.tank.abstracttankfac" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.msb.Main">
+  <component name="RunManager" selected="Application.com.msb.tank.spring.v2.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.spring.v1.Main" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="com.msb.tank.spring.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.msb.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.Main" />
+    <configuration name="com.msb.tank.proxy.cglib.Tank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.proxy.cglib.Tank" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.*" />
+          <option name="PATTERN" value="com.msb.tank.proxy.cglib.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,31 +149,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.msb.tank.proxy.v4.Tank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.proxy.v4.Tank" />
       <module name="TankProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ImageTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.tank.proxy.v4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.msb.tank.proxy.v5.Tank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.proxy.v5.Tank" />
       <module name="TankProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ImageTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.tank.proxy.v5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.msb.tank.spring.v2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.spring.v2.Main" />
+      <module name="TankProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.tank.spring.v2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.msb.Main" />
-        <item itemvalue="JUnit.ImageTest.test" />
-        <item itemvalue="JUnit.ImageTest" />
+        <item itemvalue="Application.com.msb.tank.spring.v2.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.msb.tank.proxy.cglib.Tank" />
+        <item itemvalue="Application.com.msb.tank.proxy.v5.Tank" />
+        <item itemvalue="Application.com.msb.tank.proxy.v4.Tank" />
       </list>
     </recent_temporary>
   </component>
@@ -204,12 +284,204 @@
       <option name="project" value="LOCAL" />
       <updated>1716426565970</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add Explode.java file when explosion and will remove the explosion.">
+      <created>1716487272363</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716487272363</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add boundary check.">
+      <created>1716491887009</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716491887009</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix more rect problem when colliding.">
+      <created>1716492749108</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716492749108</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add config file and make the initTankCount prop dynamically">
+      <created>1716496252356</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716496252357</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor the code with the config file">
+      <created>1716497361483</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716497361483</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor the code with the config file">
+      <created>1716499146896</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716499146896</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add the comment to the network branch">
+      <created>1716499274356</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716499274356</updated>
+    </task>
+    <task id="LOCAL-00019" summary="move the previous code to the new package named tank">
+      <created>1716500561487</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716500561487</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add the strategy pattern">
+      <created>1716508364805</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716508364805</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add the strategy pattern and the game works">
+      <created>1716577671239</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716577671239</updated>
+    </task>
+    <task id="LOCAL-00022" summary="config the fire to make the good tank fire four direction. class works.">
+      <created>1716578544965</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716578544965</updated>
+    </task>
+    <task id="LOCAL-00023" summary="modified Tank.java file">
+      <created>1716583671037</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716583671037</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add factory method and abstract factory.">
+      <created>1716706260028</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716706260030</updated>
+    </task>
+    <task id="LOCAL-00025" summary="continue with abstract factory to refactor the tank">
+      <created>1716757459089</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716757459089</updated>
+    </task>
+    <task id="LOCAL-00026" summary="complete the abstract factory refactor with tank, bullet, explode.">
+      <created>1716782936786</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716782936786</updated>
+    </task>
+    <task id="LOCAL-00027" summary="complete the abstract factory">
+      <created>1716783204344</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716783204344</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add GameModel class to refactor to the Facade dp. GameModel is like the mediator inside of the design.">
+      <created>1716840627112</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716840627112</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add COR chain of responsibility to the tank project">
+      <created>1716875368041</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716875368041</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add WallTankCollider and BulletWallCollider for the existing dp, so it will be easy to add new feature.">
+      <created>1716942024967</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716942024968</updated>
+    </task>
+    <task id="LOCAL-00031" summary="refactoring and decouple the Bullet and Tank files">
+      <created>1716961988779</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961988780</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add the decoration pattern to the game">
+      <created>1717014586571</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717014586571</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add several version of observer pattern">
+      <created>1717027462020</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717027462020</updated>
+    </task>
+    <task id="LOCAL-00034" summary="implement observer pattern to the tank fire.">
+      <created>1717045339848</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1717045339848</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add Composite pattern">
+      <created>1717047449583</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1717047449583</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add flyweight poolish idea">
+      <created>1717048498568</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1717048498568</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="efb82205-18c5-4adf-91e2-e3c6927193a4">
           <value>
             <State>
@@ -244,16 +516,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First Commit on tank" />
-    <MESSAGE value="Second Commit on tank, add paint" />
-    <MESSAGE value="Intro the bullet" />
-    <MESSAGE value="address the issue of memory leaking on the bullets remove" />
-    <MESSAGE value="load the tank images to the project" />
-    <MESSAGE value="add bullet images to the project" />
-    <MESSAGE value="bullet and tank collide" />
-    <MESSAGE value="add the random fire on the enemy tanks" />
-    <MESSAGE value="paint a explosion" />
     <MESSAGE value="include ImageUtil file." />
-    <option name="LAST_COMMIT_MESSAGE" value="include ImageUtil file." />
+    <MESSAGE value="add Explode.java file when explosion and will remove the explosion." />
+    <MESSAGE value="add boundary check." />
+    <MESSAGE value="fix more rect problem when colliding." />
+    <MESSAGE value="add config file and make the initTankCount prop dynamically" />
+    <MESSAGE value="refactor the code with the config file" />
+    <MESSAGE value="add the comment to the network branch" />
+    <MESSAGE value="move the previous code to the new package named tank" />
+    <MESSAGE value="add the strategy pattern" />
+    <MESSAGE value="add the strategy pattern and the game works" />
+    <MESSAGE value="config the fire to make the good tank fire four direction. class works." />
+    <MESSAGE value="modified Tank.java file" />
+    <MESSAGE value="add factory method and abstract factory." />
+    <MESSAGE value="continue with abstract factory to refactor the tank" />
+    <MESSAGE value="complete the abstract factory refactor with tank, bullet, explode." />
+    <MESSAGE value="complete the abstract factory" />
+    <MESSAGE value="Add GameModel class to refactor to the Facade dp. GameModel is like the mediator inside of the design." />
+    <MESSAGE value="add COR chain of responsibility to the tank project" />
+    <MESSAGE value="add WallTankCollider and BulletWallCollider for the existing dp, so it will be easy to add new feature." />
+    <MESSAGE value="refactoring and decouple the Bullet and Tank files" />
+    <MESSAGE value="add the decoration pattern to the game" />
+    <MESSAGE value="add several version of observer pattern" />
+    <MESSAGE value="implement observer pattern to the tank fire." />
+    <MESSAGE value="add Composite pattern" />
+    <MESSAGE value="add flyweight poolish idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="add flyweight poolish idea" />
   </component>
 </project>

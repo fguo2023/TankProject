@@ -20,6 +20,7 @@ public class FireOneBullet implements FireStrategy {
         int bX = tank.getX() + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
         int bY = tank.getY() + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
         // BUG? New Bullet add itself again
-        GameModel.getInstance().add(new RectDecorator(new TailDecorator(new Bullet(bX, bY, tank.getDir(), tank.getGroup()))));
+        //GameModel.getInstance().add(new RectDecorator(new TailDecorator(new Bullet(bX, bY, tank.getDir(), tank.getGroup()))));
+        new Bullet(bX, bY, tank.getDir(), tank.getGroup());
     }
 }

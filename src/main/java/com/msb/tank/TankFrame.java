@@ -55,6 +55,7 @@ public class TankFrame extends Frame {
     }
 
     class MyKeyListener extends KeyAdapter {
+
         boolean bL = false;
         boolean bU = false;
         boolean bR = false;
@@ -88,6 +89,7 @@ public class TankFrame extends Frame {
             switch (key) {
                 case KeyEvent.VK_LEFT:
                     bL = false;
+                    repaint();
                     break;
                 case KeyEvent.VK_RIGHT:
                     bR = false;
@@ -99,7 +101,7 @@ public class TankFrame extends Frame {
                     bD = false;
                     break;
                 case KeyEvent.VK_CONTROL:
-                    GameModel.getInstance().getMainTank().fire();
+                    GameModel.getInstance().getMainTank().handleFireKey();
                     break;
                 default:
                     break;
@@ -120,4 +122,16 @@ public class TankFrame extends Frame {
             if (bD) myTank.setDir(DIR.UP);
         }
     }
+    // if the myKeyListener is written outside the class, how to call the repaint
+    /*class myKeyListener extends KeyAdapter{
+        @Override
+        public void keyPressed(KeyEvent e) {
+            ((Frame)e.getSource()).repaint(); the source will be the object type, you always need to cast it
+        }
+        @Override
+        public void keyReleased(KeyEvent e) {
+            super.keyReleased(e);
+        }
+    }*/
+//    hook callback function is the observer
 }

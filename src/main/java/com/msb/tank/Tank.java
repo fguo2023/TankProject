@@ -1,12 +1,15 @@
 package com.msb.tank;
 
+import com.msb.tank.observertank.*;
 import com.msb.tank.strategy.FireOneBullet;
 import com.msb.tank.strategy.FireStrategy;
 
 import java.awt.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
-public class Tank extends  GameObject {
+public class Tank extends GameObject {
     private int oldX, oldY;
     private DIR dir = DIR.DOWN;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
@@ -112,22 +115,6 @@ public class Tank extends  GameObject {
         return HEIGHT;
     }
 
-    public int getOldX() {
-        return oldX;
-    }
-
-    public void setOldX(int oldX) {
-        this.oldX = oldX;
-    }
-
-    public int getOldY() {
-        return oldY;
-    }
-
-    public void setOldY(int oldY) {
-        this.oldY = oldY;
-    }
-
     private void move() {
         oldX = x;
         oldY = y;
@@ -179,12 +166,22 @@ public class Tank extends  GameObject {
         this.living = false;
     }
 
-    public void back(){
+    public void back() {
         x = oldX;
         y = oldY;
     }
 
     public void stop() {
         moving = false;
+    }
+
+    private List<TankFireObserver> fireObservers = Arrays.asList(new TankFireHandler(), new TankFireLogHandler()); // name may change in the future
+
+    public void handleFireKey() {
+        TankFireEvent event = new TankFireEvent(this);
+        // when the control button click, then fire the event, event contains the tank prop, and then observer do the action with the event, event's source do the action.
+        for (TankFireObserver o : fireObservers) { // now has only one observer, can be more than one observer
+            o.actionOnFire(event);
+        }
     }
 }

@@ -4,12 +4,14 @@ import java.util.ArrayList;
 
 public class Main {
     static class Child {
-        ArrayList<Observer> observersList = new ArrayList<>();
+        ArrayList<Observer> observers = new ArrayList<>();
         private boolean cry = false;
 
         {
-            observersList.add(new Mum());
-            observersList.add(new Dad());
+            observers.add(new Mum());
+            observers.add(new Dad());
+            //  hook callback function is the observer 钩子函数， callback就是观察者模式
+            observers.add((e)-> System.out.println("ppp"));
         }
 
         /*
@@ -18,8 +20,8 @@ public class Main {
          */
         public void wakeup(wakeupEvent event) {
             cry = true;
-            for (Observer o : observersList) {
-                o.action();
+            for (Observer o : observers) {
+                o.action(event);
             }
         }
     }
@@ -42,17 +44,18 @@ public class Main {
     }
 
     interface Observer {
-        void action();
+        void action(Event e);
     }
 
     static class Dad implements Observer {
-        public void action() {
-            System.out.println("dad feeding");
+        @Override
+        public void action(Event e) {
+
         }
     }
 
     static class Mum implements Observer {
-        public void action() {
+        public void action(Event e) {
             System.out.println("mum hugging");
         }
     }

@@ -19,6 +19,8 @@ public class Computer {
         CorpVisitor visitor = new CorpVisitor();
         new Computer().accept(visitor);
         System.out.println(visitor.totalPrice);
+        // build a computer, cpu, memory, board, if there is a person come
+        // if(is instance of person) then return the price 30, if is instance of corp, then return 10 for every class
     }
 }
 

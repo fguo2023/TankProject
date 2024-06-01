@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add flyweight poolish idea">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/cglib/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v1/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v2/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v3/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v4/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v5/MyInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v5/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/TimeProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/TimeProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app_auto.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add Visitor pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/ASM/T1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/ASM/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/ASM/note" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/v2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/v2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/v2/Node.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +62,11 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -85,16 +79,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/TankTank/TankProject/src/main/java/com/msb/tank/spring/v2",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/TankTank/TankProject/src/main/java/com/msb/tank/interator/v5&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.msb.tank.observer.v9" />
@@ -104,11 +99,11 @@
       <recent name="com.msb.tank.factorymethod" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\interator\v5" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\interator\v4" />
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\interator\v2" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\spring\v2" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\cglib" />
-      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\v5" />
-      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\v4" />
-      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\proxy\v3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\TankTank\TankProject\src\main\resources" />
@@ -122,13 +117,13 @@
       <recent name="com.msb.tank.abstracttankfac" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.msb.tank.spring.v2.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.spring.v1.Main" />
+  <component name="RunManager" selected="Application.ClassTransformerTest">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.visitor.v2.Calculator" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.tank.spring.v1.*" />
+          <option name="PATTERN" value="com.msb.tank.visitor.v2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.msb.tank.proxy.cglib.Tank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.proxy.cglib.Tank" />
+    <configuration name="ClassTransformerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.ASM.ClassTransformerTest" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.tank.proxy.cglib.*" />
+          <option name="PATTERN" value="com.msb.tank.ASM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.msb.tank.proxy.v4.Tank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.proxy.v4.Tank" />
+    <configuration name="Computer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.visitor.Computer" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.tank.proxy.v4.*" />
+          <option name="PATTERN" value="com.msb.tank.visitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.msb.tank.proxy.v5.Tank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.proxy.v5.Tank" />
+    <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.ASM.T1" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.tank.proxy.v5.*" />
+          <option name="PATTERN" value="com.msb.tank.ASM.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,12 +170,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.msb.tank.spring.v2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.spring.v2.Main" />
+    <configuration name="com.msb.tank.interator.v5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.interator.v5.Main" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.tank.spring.v2.*" />
+          <option name="PATTERN" value="com.msb.tank.interator.v5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.msb.tank.spring.v2.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.com.msb.tank.proxy.cglib.Tank" />
-        <item itemvalue="Application.com.msb.tank.proxy.v5.Tank" />
-        <item itemvalue="Application.com.msb.tank.proxy.v4.Tank" />
+        <item itemvalue="Application.ClassTransformerTest" />
+        <item itemvalue="Application.T1" />
+        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.Computer" />
+        <item itemvalue="Application.com.msb.tank.interator.v5.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +454,28 @@
       <option name="project" value="LOCAL" />
       <updated>1717048498568</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add static proxy pattern and dynamic proxy pattern">
+      <created>1717111898702</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1717111898703</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add iterator pattern">
+      <created>1717134731059</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1717134731059</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add Visitor pattern">
+      <created>1717186612179</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1717186612179</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,9 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="include ImageUtil file." />
-    <MESSAGE value="add Explode.java file when explosion and will remove the explosion." />
-    <MESSAGE value="add boundary check." />
     <MESSAGE value="fix more rect problem when colliding." />
     <MESSAGE value="add config file and make the initTankCount prop dynamically" />
     <MESSAGE value="refactor the code with the config file" />
@@ -541,6 +554,29 @@
     <MESSAGE value="implement observer pattern to the tank fire." />
     <MESSAGE value="add Composite pattern" />
     <MESSAGE value="add flyweight poolish idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="add flyweight poolish idea" />
+    <MESSAGE value="add static proxy pattern and dynamic proxy pattern" />
+    <MESSAGE value="add iterator pattern" />
+    <MESSAGE value="add Visitor pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Visitor pattern" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/LinkedList.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

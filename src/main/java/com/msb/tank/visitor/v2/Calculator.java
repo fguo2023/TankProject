@@ -1,5 +1,6 @@
 package com.msb.tank.visitor.v2;
 
+// any node that accept the visitor that can be used
 public class Calculator {
     Node operatorNode = new OperatorNode();
     Node operandNode = new OperandNode();

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add Visitor pattern and ASM">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v1/Servlet_Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v2/Servlet_Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v3/Servlet_Main.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the complete homework for cor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/ComputerTerrainBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/Terrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/TerrainBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v4/Servlet_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v4/Servlet_Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/TankTank/TankProject/src/main/java/com/msb/tank/cor/servlet/v3",
+    "last_opened_file_path": "C:/TankTank/TankProject/src/main/java/com/msb/tank/cor/servlet/v4",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -99,11 +99,11 @@
       <recent name="com.msb.tank.abstractfactory" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\cor\servlet\v4" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\cor\servlet\v3" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\cor\servlet\v2" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\interator\v5" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\interator\v4" />
-      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\interator\v2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\TankTank\TankProject\src\main\resources" />
@@ -482,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717214632923</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add the complete homework for cor">
+      <created>1717217260159</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1717217260159</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add config file and make the initTankCount prop dynamically" />
     <MESSAGE value="refactor the code with the config file" />
     <MESSAGE value="add the comment to the network branch" />
     <MESSAGE value="move the previous code to the new package named tank" />
@@ -564,7 +570,8 @@
     <MESSAGE value="add iterator pattern" />
     <MESSAGE value="add Visitor pattern" />
     <MESSAGE value="add Visitor pattern and ASM" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Visitor pattern and ASM" />
+    <MESSAGE value="add the complete homework for cor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the complete homework for cor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

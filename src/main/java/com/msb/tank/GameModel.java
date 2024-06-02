@@ -3,9 +3,10 @@ package com.msb.tank;
 import com.msb.tank.cor.ColliderChain;
 
 import java.awt.*;
+import java.io.*;
 import java.util.ArrayList;
 
-public class GameModel {
+public class GameModel implements Serializable{
     Tank myTank;
     //    ArrayList<Tank> tanks = new ArrayList<>();
     //    ArrayList<Explode> explodes = new ArrayList<>();
@@ -14,7 +15,7 @@ public class GameModel {
     //Collider collider = new BulletTankCollider();
     //Collider collider2 = new TankTankCollider();
 
-    private static final GameModel INSTANCE = new GameModel();
+    private static GameModel INSTANCE = new GameModel();
 
     static {
         INSTANCE.init();
@@ -50,7 +51,8 @@ public class GameModel {
     /*
     Facade pattern
      */
-    private GameModel() {}
+    private GameModel() {
+    }
 
     public void paint(Graphics g) {
         Color c = g.getColor();
@@ -97,7 +99,47 @@ public class GameModel {
 //        }
     }
 
+    public void save() {
+        File f = new File("C:/TankTank/tank.data");
+        ObjectOutputStream oop = null;
+        try {
+            oop = new ObjectOutputStream(new FileOutputStream(f));
+            oop.writeObject(this);
+            //oop.writeObject(myTank);
+            //oop.writeObject(objects);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                oop.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
     public Tank getMainTank() {
         return myTank;
+    }
+
+    public void load() {
+        File f = new File("c:/TankTank/tank.data");
+        ObjectInputStream ooi = null;
+        try {
+            ooi = new ObjectInputStream(new FileInputStream(f));
+//            myTank = (Tank) ooi.readObject();
+//            objects = (ArrayList<GameObject>) ooi.readObject();
+            INSTANCE = (GameModel) ooi.readObject();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } finally {
+            try {
+                ooi.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 }

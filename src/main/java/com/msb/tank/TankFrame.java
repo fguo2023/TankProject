@@ -9,7 +9,7 @@ import java.awt.event.WindowEvent;
 public class TankFrame extends Frame {
 
     // Facade pattern
-    //GameModel gm = GameModel.getInstance();
+    GameModel gm = GameModel.getInstance();
     static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
     static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
     //private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
@@ -76,6 +76,12 @@ public class TankFrame extends Frame {
                     break;
                 case KeyEvent.VK_UP:
                     bU = true;
+                    break;
+                case KeyEvent.VK_S:
+                     gm.save();
+                     break;
+                case KeyEvent.VK_L:
+                    gm.load();
                     break;
                 default:
                     break;

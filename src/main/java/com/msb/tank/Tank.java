@@ -5,6 +5,7 @@ import com.msb.tank.strategy.FireOneBullet;
 import com.msb.tank.strategy.FireStrategy;
 
 import java.awt.*;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -175,6 +176,7 @@ public class Tank extends GameObject {
         moving = false;
     }
 
+    // can add the transient means doesn't need to serialize
     private List<TankFireObserver> fireObservers = Arrays.asList(new TankFireHandler(), new TankFireLogHandler()); // name may change in the future
 
     public void handleFireKey() {

@@ -4,28 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the builder pattern">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/adapter/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/GG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/Gift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/MM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/GG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/Gift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/MM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/WarmGift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/WildGift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/Flower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/GG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/Gift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/GiftImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/WarmGift.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/WildGift.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the bridge pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/CopyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/DeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/InsertCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/readme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -511,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717225581789</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add the bridge pattern">
+      <created>1717297676377</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1717297676378</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the comment to the network branch" />
     <MESSAGE value="move the previous code to the new package named tank" />
     <MESSAGE value="add the strategy pattern" />
     <MESSAGE value="add the strategy pattern and the game works" />
@@ -593,7 +585,8 @@
     <MESSAGE value="add Visitor pattern and ASM" />
     <MESSAGE value="add the complete homework for cor" />
     <MESSAGE value="add the builder pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the builder pattern" />
+    <MESSAGE value="add the bridge pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the bridge pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

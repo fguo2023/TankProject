@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the prototype pattern and continue.....">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/momento/readme" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the momento pattern and continue.....">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v1/MM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMHappyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMNervousState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMSadState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/templateMethod/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/templateMethod/readme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/GameModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/TankFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/Collider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/ColliderChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/ColliderChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observertank/TankFireObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/msb/tank/observertank/TankFireObserver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +113,14 @@
       <recent name="C:\TankTank\TankProject\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.msb.tank.state.v2" />
       <recent name="com.msb.tank.bridge.v3" />
       <recent name="com.msb.tank.observer.v9" />
       <recent name="com.msb.tank.observer.v7" />
       <recent name="com.msb.tank.observer.v6" />
-      <recent name="com.msb.tank.decorator" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.com.msb.tank.templateMethod.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.tank.Main" />
       <module name="TankProject" />
@@ -139,19 +140,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.msb.tank.prototype.v1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.msb.tank.cor.servlet.v4.Servlet_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.cor.servlet.v4.Servlet_Main" />
-      <module name="TankProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.tank.cor.servlet.v4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,13 +173,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.msb.tank.templateMethod.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.templateMethod.Main" />
+      <module name="TankProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msb.tank.templateMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.msb.tank.templateMethod.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.msb.tank.prototype.v4.Test" />
         <item itemvalue="Application.com.msb.tank.prototype.v2.Test" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.com.msb.tank.cor.servlet.v4.Servlet_Main" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717307593838</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="add the momento pattern and continue.....">
+      <created>1717359432127</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1717359432127</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +584,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the strategy pattern and the game works" />
     <MESSAGE value="config the fire to make the good tank fire four direction. class works." />
     <MESSAGE value="modified Tank.java file" />
     <MESSAGE value="add factory method and abstract factory." />
@@ -601,7 +608,8 @@
     <MESSAGE value="add the bridge pattern" />
     <MESSAGE value="add the command pattern and continue....." />
     <MESSAGE value="add the prototype pattern and continue....." />
-    <option name="LAST_COMMIT_MESSAGE" value="add the prototype pattern and continue....." />
+    <MESSAGE value="add the momento pattern and continue....." />
+    <option name="LAST_COMMIT_MESSAGE" value="add the momento pattern and continue....." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

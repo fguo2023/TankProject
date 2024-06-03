@@ -1,7 +1,6 @@
 package com.msb.tank.state.v2;
 
 public abstract class MMState {
-
     abstract void smile();
 
     abstract void cry();

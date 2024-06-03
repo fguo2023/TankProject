@@ -1,8 +1,6 @@
 package com.msb.tank.state.v2;
 
 public class MMNervousState extends MMState{
-
-
     @Override
     void smile() {
 

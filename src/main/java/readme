@@ -1,0 +1,7 @@
+SRP single responsibility principle
+OCP open closed principle
+Liscov Substitution Principle 所有使用父类的地方，必须能够透明的使用子类对象
+Dependency Inversion Principle 面向接口编程
+Interface Segregation Principle
+Law of Demeter
+SOLID principle

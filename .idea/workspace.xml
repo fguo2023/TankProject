@@ -4,15 +4,257 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add the state pattern and continue.....">
-      <change afterPath="$PROJECT_DIR$/src/main/java/readme" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add conclusion of the SOLID principle">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/ASM/ClassTransformerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/ASM/T1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/ASM/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/ASM/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/DIR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Explode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/GameModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/PropertyMgr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/ResourceMgr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/TankFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/adapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v1/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v1/Flower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v1/GG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v1/Gift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v1/MM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/Flower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/GG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/Gift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/MM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/WarmGift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v2/WildGift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/Flower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/GG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/Gift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/GiftImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/WarmGift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/bridge/v3/WildGift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/builder/ComputerTerrainBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/builder/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/builder/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/builder/Terrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/builder/TerrainBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/CopyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/DeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/InsertCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/command/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/composite/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/BulletTankCollider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/BulletWallCollider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/Collider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/ColliderChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/TankTankCollider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/WallTankCollider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/servlet/v1/Servlet_Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/servlet/v2/Servlet_Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/servlet/v3/Servlet_Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/servlet/v3/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/servlet/v4/Servlet_Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/cor/servlet/v4/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/decorator/GODecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/decorator/RectDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/decorator/TailDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/flyweight/BulletPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/flyweight/TestString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v3/ArrayList_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v3/Collection_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v3/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v4/ArrayList_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v4/Collection_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v4/HashSet_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v4/Iterator_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v4/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v5/ArrayList_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v5/Collection_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v5/HashSet_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v5/Iterator_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v5/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/interator/v5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/momento/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v3/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v3/Dad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v3/Mum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v4/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v4/Dad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v4/Mum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v4/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v6/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v7/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v8/MyActionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v8/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v8/TestFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v9/ActionEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observer/v9/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observertank/TankFireEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observertank/TankFireHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observertank/TankFireLogHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/observertank/TankFireObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/prototype/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/prototype/v1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/prototype/v2/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/prototype/v3/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/prototype/v4/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/cglib/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/v1/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/v2/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/v3/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/v4/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/v5/MyInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/proxy/v5/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/spring/v1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/spring/v1/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/spring/v1/TimeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/spring/v2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/spring/v2/Tank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/spring/v2/TimeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/NewState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/RunningState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/TerminatedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/ThreadState_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/Thread_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/thread/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v1/MM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v2/MM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v2/MMHappyState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v2/MMNervousState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v2/MMSadState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v2/MMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/CarState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/ClosedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/OpenState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/RunningState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/state/v3_car/StoppedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/strategy/FireFourDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/strategy/FireOneBullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/strategy/FireStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/templateMethod/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/templateMethod/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/visitor/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/visitor/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/visitor/v2/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/app_auto.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/BadTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/BadTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/GoodTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/GoodTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/bulletD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/bulletL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/bulletR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/bulletU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/bulletU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/e9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/missileLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/missileLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/missileRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/missileRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankModule/src/main/resources/images/tankU.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/NettyStudy">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,7 +321,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/TankTank/TankProject/src/main/java/com/msb/tank/prototype/v4",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/TankTank/TankProject/TankModule/src/main/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -100,13 +344,14 @@
       <recent name="com.msb.tank.observer.v8" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\TankTank\TankProject\TankModule\src\main\resources" />
+      <recent name="C:\TankTank\TankProject\TankModule\src\main\java" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\prototype\v4" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\prototype\v3" />
       <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\prototype\v2" />
-      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\bridge\v2" />
-      <recent name="C:\TankTank\TankProject\src\main\java\com\msb\tank\cor\servlet\v4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\TankTank\TankProject\TankModule\src\main\resources" />
       <recent name="C:\TankTank\TankProject\src\main\resources" />
       <recent name="C:\TankTank\TankProject\src" />
     </key>
@@ -118,7 +363,7 @@
       <recent name="com.msb.tank.observer.v6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.tank.state.v3_car.Car" />
       <module name="TankProject" />
@@ -132,9 +377,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.tank.Main" />
-      <module name="TankProject" />
+      <module name="TankModule" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.msb.tank.*" />
@@ -145,12 +390,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.msb.tank.prototype.v2.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.prototype.v2.Test" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.msb.tank.Main" />
       <module name="TankProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msb.tank.prototype.v2.*" />
+          <option name="PATTERN" value="com.msb.tank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,11 +431,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Car" />
         <item itemvalue="Application.com.msb.tank.templateMethod.Main" />
         <item itemvalue="Application.com.msb.tank.prototype.v4.Test" />
-        <item itemvalue="Application.com.msb.tank.prototype.v2.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717374137234</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add conclusion of the SOLID principle">
+      <created>1717434900380</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1717434900380</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +848,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified Tank.java file" />
     <MESSAGE value="add factory method and abstract factory." />
     <MESSAGE value="continue with abstract factory to refactor the tank" />
     <MESSAGE value="complete the abstract factory refactor with tank, bullet, explode." />
@@ -621,7 +872,8 @@
     <MESSAGE value="add the prototype pattern and continue....." />
     <MESSAGE value="add the momento pattern and continue....." />
     <MESSAGE value="add the state pattern and continue....." />
-    <option name="LAST_COMMIT_MESSAGE" value="add the state pattern and continue....." />
+    <MESSAGE value="add conclusion of the SOLID principle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add conclusion of the SOLID principle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

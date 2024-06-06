@@ -7,6 +7,10 @@
     <groupId>org.example</groupId>
     <artifactId>TankProject</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>TankModule</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -42,6 +46,11 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.7</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.objectweb.asm/org.objectweb.asm -->
 <!--        <dependency>-->
 <!--            <groupId>org.objectweb.asm</groupId>-->
@@ -54,13 +63,6 @@
 <!--            <version>7.3.1</version>-->
 <!--        </dependency>-->
         <!-- Spring AOP -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
-
     </dependencies>
 
 </project>

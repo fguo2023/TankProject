@@ -5,7 +5,6 @@ import com.msb.tank.strategy.FireOneBullet;
 import com.msb.tank.strategy.FireStrategy;
 
 import java.awt.*;
-import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;

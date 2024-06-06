@@ -12,6 +12,21 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TankModule/src/NettyStudy" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Gradle/gradle-7.6" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TestModule" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../Gradle/gradle-7.6" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/TestModule" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>

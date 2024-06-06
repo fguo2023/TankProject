@@ -1,8 +1,0 @@
-封装命令，结合cor实现undo
-
-command模式也叫
-Action/Transaction
-
-宏命令 command 与composite模式
-多次undo  command + cor pattern
-transaction回滚 command + momento pattern

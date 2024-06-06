@@ -1,6 +1,0 @@
-Iterator pattern
-create a container
-for physical data structure: we only have two, array, and linked list
-for logic data structure: we have more, like binary tree, n-nary tree, graph
-
-TO implement the Iterator, each container to implement its iterator

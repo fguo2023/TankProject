@@ -1,5 +1,0 @@
-原型模式
-Object.clone()
-
-实现原型模式需要实现标记型接口Cloneable
-一般会重写clone()方法

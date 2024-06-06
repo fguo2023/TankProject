@@ -4,175 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add a new tank module in the current project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="to add the TankModule to the TankProject">
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TankModule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TankModule/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/ASM/T1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/ASM/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/ASM/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Bullet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/DIR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Explode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/GameModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/ImageUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/PropertyMgr.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/ResourceMgr.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/TankFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/Wall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/adapter/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/Flower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/GG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/Gift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v1/MM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/Flower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/GG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/Gift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/MM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/WarmGift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v2/WildGift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/Flower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/GG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/Gift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/GiftImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/WarmGift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/bridge/v3/WildGift.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/ComputerTerrainBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/Terrain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/builder/TerrainBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/Content.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/CopyCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/DeleteCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/InsertCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/command/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/composite/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/BulletTankCollider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/BulletWallCollider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/Collider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/ColliderChain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/TankTankCollider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/WallTankCollider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v1/Servlet_Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v2/Servlet_Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v3/Servlet_Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v3/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v4/Servlet_Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/cor/servlet/v4/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/decorator/GODecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/decorator/RectDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/decorator/TailDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/flyweight/BulletPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/flyweight/TestString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v3/ArrayList_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v3/Collection_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v3/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v3/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v4/ArrayList_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v4/Collection_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v4/HashSet_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v4/Iterator_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v4/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/ArrayList_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/Collection_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/HashSet_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/Iterator_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/interator/v5/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/momento/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v3/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v3/Dad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v3/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v3/Mum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v4/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v4/Dad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v4/Mum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v4/Observer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v5/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v6/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v7/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v7/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v8/MyActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v8/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v8/TestFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v9/ActionEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observer/v9/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observertank/TankFireEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observertank/TankFireHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observertank/TankFireLogHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/observertank/TankFireObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/prototype/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/prototype/v1/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/prototype/v2/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/prototype/v3/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/prototype/v4/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/cglib/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v1/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v2/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v3/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v4/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v5/MyInvocationHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/proxy/v5/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v1/TimeProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/spring/v2/TimeProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/NewState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/RunningState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/TerminatedState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/ThreadState_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/Thread_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/thread/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v1/MM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMHappyState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMNervousState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMSadState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v2/MMState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/CarState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/ClosedState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/OpenState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/RunningState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/state/v3_car/StoppedState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/strategy/FireFourDirection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/strategy/FireOneBullet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/strategy/FireStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/templateMethod/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/templateMethod/readme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/Computer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/msb/tank/visitor/v2/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ImageTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,17 +34,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="NettyStudy" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="NettyStudy" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="NettyStudy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="TestModule" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -326,41 +152,8 @@
       <recent name="com.msb.tank.observer.v7" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.Main" />
-      <module name="TankModule" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.tank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="TankProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.Main" />
-      <module name="TankProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.tank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.msb.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.Main" />
       <module name="NettyStudy.main" />
       <extension name="coverage">
@@ -375,7 +168,7 @@
     </configuration>
     <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="NettyStudy.main" />
+      <module name="NettyStudy.NettyStudy.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -386,12 +179,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NettyStudy [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/NettyStudy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NettyStudy [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/NettyStudy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NettyStudy [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/NettyStudy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.com.msb.Main" />
+        <item itemvalue="Gradle.NettyStudy [buildDependents]" />
+        <item itemvalue="Gradle.NettyStudy [clean]" />
+        <item itemvalue="Gradle.NettyStudy [build]" />
         <item itemvalue="Application.org.example.Main" />
       </list>
     </recent_temporary>
@@ -404,13 +260,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709587608541</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Second Commit on tank, add paint">
-      <created>1709589868704</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1709589868704</updated>
     </task>
     <task id="LOCAL-00003" summary="Intro the bullet">
       <created>1709593911626</created>
@@ -748,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717699028993</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="to add the TankModule to the TankProject">
+      <created>1717704210984</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1717704210984</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -805,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="continue with abstract factory to refactor the tank" />
     <MESSAGE value="complete the abstract factory refactor with tank, bullet, explode." />
     <MESSAGE value="complete the abstract factory" />
     <MESSAGE value="Add GameModel class to refactor to the Facade dp. GameModel is like the mediator inside of the design." />
@@ -830,7 +685,8 @@
     <MESSAGE value="add the state pattern and continue....." />
     <MESSAGE value="add conclusion of the SOLID principle" />
     <MESSAGE value="add a new tank module in the current project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a new tank module in the current project" />
+    <MESSAGE value="to add the TankModule to the TankProject" />
+    <option name="LAST_COMMIT_MESSAGE" value="to add the TankModule to the TankProject" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

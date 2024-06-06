@@ -4,16 +4,6 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/NettyStudy" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../Gradle/gradle-7.6" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/NettyStudy" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/TankModule/src/NettyStudy" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../Gradle/gradle-7.6" />
       </GradleProjectSettings>

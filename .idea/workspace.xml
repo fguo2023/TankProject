@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="to add the TankModule to the TankProject">
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add NettyStudy Module">
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/bio/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/bio/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/bio/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/nio/PoolServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/nio/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,26 @@
         <projects_view>
           <tree_state>
             <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="TestModule" type="f1a62948:ProjectNode" />
@@ -260,13 +283,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709587608541</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Intro the bullet">
-      <created>1709593911626</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1709593911626</updated>
     </task>
     <task id="LOCAL-00004" summary="address the issue of memory leaking on the bullets remove">
       <created>1709597812306</created>
@@ -604,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717704210984</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add NettyStudy Module">
+      <created>1717708903339</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1717708903339</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -661,7 +684,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="complete the abstract factory refactor with tank, bullet, explode." />
     <MESSAGE value="complete the abstract factory" />
     <MESSAGE value="Add GameModel class to refactor to the Facade dp. GameModel is like the mediator inside of the design." />
     <MESSAGE value="add COR chain of responsibility to the tank project" />
@@ -686,7 +708,8 @@
     <MESSAGE value="add conclusion of the SOLID principle" />
     <MESSAGE value="add a new tank module in the current project" />
     <MESSAGE value="to add the TankModule to the TankProject" />
-    <option name="LAST_COMMIT_MESSAGE" value="to add the TankModule to the TankProject" />
+    <MESSAGE value="add NettyStudy Module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add NettyStudy Module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

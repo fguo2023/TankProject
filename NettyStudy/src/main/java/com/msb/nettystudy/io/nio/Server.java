@@ -1,4 +1,4 @@
-package com.msb.nettystudy.nio;
+package com.msb.nettystudy.io.nio;
 
 
 import io.netty.handler.codec.bytes.ByteArrayEncoder;

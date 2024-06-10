@@ -1,4 +1,4 @@
-package com.msb.nettystudy.bio;
+package com.msb.nettystudy.io.bio;
 
 import java.io.IOException;
 import java.net.Socket;

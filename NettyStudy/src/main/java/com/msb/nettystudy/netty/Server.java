@@ -40,7 +40,6 @@ public class Server {
             System.out.println("server started");
             //[id: 0x112f88b8, L:/127.0.0.1:8888 - R:/127.0.0.1:54540] R is the client side
             f.channel().closeFuture().sync(); // close() -> ChannelFuture only if someone invoke close() method, otherwise, it will be blocked here
-
         } finally {
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();

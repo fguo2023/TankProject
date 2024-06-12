@@ -18,21 +18,31 @@ public class Client {
             ChannelFuture f = b.group(group)
                     .channel(NioSocketChannel.class)
                     .handler(new ClientChannelInitializer())
-                    .connect("localhost", 8888);
-            f.addListener(new ChannelFutureListener() {
-                @Override
-                public void operationComplete(ChannelFuture future) throws Exception {
-                    if (future.isSuccess()) {
-                        System.out.println("connected");
-                    } else {
-                        System.out.println("not connected");
-                    }
-                }
-            });
-            f.sync();  //.sync(); 意思是等他结束
-            System.out.println("...");
+                    .connect("localhost", 8888)
+                    .addListener(new ChannelFutureListener() {
+                        @Override
+                        public void operationComplete(ChannelFuture future) throws Exception {
+                            if (future.isSuccess()) {
+                                System.out.println("connected");
+                            } else {
+                                System.out.println("not connected");
+                            }
+                        }
+                    }).sync();
+//            f.addListener(new ChannelFutureListener() {
+//                @Override
+//                public void operationComplete(ChannelFuture future) throws Exception {
+//                    if (future.isSuccess()) {
+//                        System.out.println("connected");
+//                    } else {
+//                        System.out.println("not connected");
+//                    }
+//                }
+//            });
+            //f.sync();  //.sync(); 意思是等他结束
+            //System.out.println("...");
 
-            f.channel().closeFuture().sync();
+            f.channel().closeFuture().sync(); //这句话要好好理解，因为这里有个正常的关闭过程
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } finally {
@@ -48,7 +58,7 @@ class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
     }
 }
 
-class ClientHandler extends ChannelInboundHandlerAdapter{
+class ClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // channel 第一次连上可用，写出一个字符串
@@ -64,7 +74,7 @@ class ClientHandler extends ChannelInboundHandlerAdapter{
             buf = (ByteBuf) msg;
             byte[] bytes = new byte[buf.readableBytes()];
             buf.getBytes(buf.readerIndex(), bytes);
-            System.out.println("Client: " + new String(bytes));
+            System.out.println("Client channel read: " + new String(bytes));
             //System.out.println(buf);
             //System.out.println(buf.refCnt()); // refCnt is 1 means is not released
         } finally {

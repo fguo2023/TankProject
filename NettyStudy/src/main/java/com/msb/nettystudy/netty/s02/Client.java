@@ -1,4 +1,4 @@
-package com.msb.nettystudy.s02;
+package com.msb.nettystudy.netty.s02;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;

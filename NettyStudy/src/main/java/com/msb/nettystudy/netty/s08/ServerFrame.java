@@ -1,4 +1,4 @@
-package com.msb.nettystudy.s08;
+package com.msb.nettystudy.netty.s08;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;

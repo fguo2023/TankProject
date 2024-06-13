@@ -1,4 +1,4 @@
-package com.msb.nettystudy.s08;
+package com.msb.nettystudy.netty.s08;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

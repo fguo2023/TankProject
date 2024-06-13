@@ -1,4 +1,4 @@
-package com.msb.nettystudy.s08;
+package com.msb.nettystudy.netty.s08;
 
 public class TankMsg {
     public int x,y; // one int 4 bytes

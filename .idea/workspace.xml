@@ -4,40 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="added multi chat frame">
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s03/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s03/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s03/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s04/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s04/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s04/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s05/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s05/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s05/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s06/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s06/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s06/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s06/ServerFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s07/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s07/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s07/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s07/ServerFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s02/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s02/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s02/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/ServerFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/TankMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/TankMsgDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s08/TankMsgEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/net/Msg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/net/MsgType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/net/PlayerJoinMsg.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="complete tank 17 courses.">
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/netty/s09/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NettyStudy/src/test/TankMsgCodecTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy02/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/NettyStudy/src/main/java/com/msb/nettystudy/s01/ClientFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankModule/src/main/java/com/msb/tank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NettyStudy/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NettyStudy/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NettyStudy/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/NettyStudy/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NettyStudy/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/NettyStudy/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +45,11 @@
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="TestModule" type="f1a62948:ProjectNode" />
               </path>
             </expand>
@@ -86,8 +64,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -177,6 +155,7 @@
       <recent name="C:\TankTank\TankProject\NettyStudy\src\main\java\com\msb\nettystudy\netty\s03" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\TankTank\TankProject\NettyStudy\src\test" />
       <recent name="C:\TankTank\TankProject\TankModule\src\main\java\com\msb\tank\command" />
       <recent name="C:\TankTank\TankProject\TankModule\src\main\resources" />
       <recent name="C:\TankTank\TankProject\src\main\resources" />
@@ -190,7 +169,7 @@
       <recent name="com.msb.tank.bridge.v3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PlayerJoinMsg">
+  <component name="RunManager" selected="JUnit.TankMsgCodecTest.testTankMsgEncoder2">
     <configuration name="Client (1)" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.msb.nettystudy.netty.Client" />
       <module name="NettyStudy.main" />
@@ -269,32 +248,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.nettystudy.s08.ServerFrame" />
-      <module name="NettyStudy.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.nettystudy.s08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.msb.nettystudy.netty.s06.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.nettystudy.netty.s06.Server" />
-      <module name="NettyStudy.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.nettystudy.netty.s06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="com.msb.nettystudy.s08.ClientFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.nettystudy.s08.ClientFrame" />
       <module name="NettyStudy.main" />
@@ -308,6 +261,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TankMsgCodecTest.testTankMsgEncoder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NettyStudy_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TankMsgCodecTest" />
+      <option name="METHOD_NAME" value="testTankMsgEncoder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TankMsgCodecTest.testTankMsgEncoder2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NettyStudy_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TankMsgCodecTest" />
+      <option name="METHOD_NAME" value="testTankMsgEncoder2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Client (1)" />
       <item itemvalue="Application.Client (2)" />
@@ -315,17 +288,17 @@
       <item itemvalue="Application.ClientFrame (2)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.PlayerJoinMsg" />
-      <item itemvalue="Application.ServerFrame" />
       <item itemvalue="Application.com.msb.nettystudy.s08.ClientFrame" />
-      <item itemvalue="Application.com.msb.nettystudy.netty.s06.Server" />
+      <item itemvalue="JUnit.TankMsgCodecTest.testTankMsgEncoder" />
+      <item itemvalue="JUnit.TankMsgCodecTest.testTankMsgEncoder2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TankMsgCodecTest.testTankMsgEncoder2" />
+        <item itemvalue="JUnit.TankMsgCodecTest.testTankMsgEncoder" />
         <item itemvalue="Application.PlayerJoinMsg" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.com.msb.nettystudy.s08.ClientFrame" />
-        <item itemvalue="Application.ServerFrame" />
-        <item itemvalue="Application.com.msb.nettystudy.netty.s06.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -337,13 +310,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709587608541</updated>
-    </task>
-    <task id="LOCAL-00010" summary="paint a explosion">
-      <created>1709681634316</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1709681634316</updated>
     </task>
     <task id="LOCAL-00011" summary="include ImageUtil file.">
       <created>1716426565969</created>
@@ -681,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718218603431</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="complete tank 17 courses.">
+      <created>1718315662885</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1718315662886</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -738,7 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the decoration pattern to the game" />
     <MESSAGE value="add several version of observer pattern" />
     <MESSAGE value="implement observer pattern to the tank fire." />
     <MESSAGE value="add Composite pattern" />
@@ -763,7 +735,8 @@
     <MESSAGE value="add netty client" />
     <MESSAGE value="added client to transfer message." />
     <MESSAGE value="added multi chat frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="added multi chat frame" />
+    <MESSAGE value="complete tank 17 courses." />
+    <option name="LAST_COMMIT_MESSAGE" value="complete tank 17 courses." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

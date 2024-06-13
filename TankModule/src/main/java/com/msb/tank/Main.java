@@ -1,5 +1,7 @@
 package com.msb.tank;
 
+import java.util.Properties;
+
 //Tank will have two subsidiaries: Design Pattern and Network
 // this is the dp branch
 public class Main {

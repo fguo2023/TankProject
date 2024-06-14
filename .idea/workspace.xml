@@ -4,80 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="include ImageUtil file.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Bullet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/DIR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Explode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/ImageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/PropertyMgr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/ResourceMgr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Tank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/TankFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/BadTank1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/BadTank2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/GoodTank1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/GoodTank2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/bulletD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/bulletL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/bulletR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/bulletU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/bulletU.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/e9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/missileLD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/missileLU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/missileRD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/missileRU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/square6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankL.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankLD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankLU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankR.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankRD.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankRU.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/images/tankU.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="update the master branch for the tank project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,12 +257,24 @@
       <option name="project" value="LOCAL" />
       <updated>1716426565970</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update the master branch for the tank project">
+      <created>1718326486640</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718326486640</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="efb82205-18c5-4adf-91e2-e3c6927193a4">
           <value>
             <State>
@@ -378,6 +319,7 @@
     <MESSAGE value="add the random fire on the enemy tanks" />
     <MESSAGE value="paint a explosion" />
     <MESSAGE value="include ImageUtil file." />
-    <option name="LAST_COMMIT_MESSAGE" value="include ImageUtil file." />
+    <MESSAGE value="update the master branch for the tank project" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the master branch for the tank project" />
   </component>
 </project>

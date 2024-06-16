@@ -5,22 +5,30 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.ArrayList;
+import java.util.*;
 
 public class TankFrame extends Frame {
 
-    static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
-    static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
+    public static final TankFrame INSTANCE = new TankFrame();
+
+    //static final int GAME_WIDTH = PropertyMgr.getIntValue(Constants.GAME_WIDTH);
+    static final int GAME_WIDTH = 2000;
+    //static final int GAME_HEIGHT = PropertyMgr.getIntValue(Constants.GAME_HEIGHT);
+    static final int GAME_HEIGHT = 2000;
 
     ArrayList<Bullet> bullets = new ArrayList<>();
 
+    Random r = new Random();
     private int myTankSpeed = PropertyMgr.getIntValue(Constants.TANK_SPEED);
-    Tank myTank = new Tank(200, 400, DIR.UP, myTankSpeed, Group.GOOD, this);
-    ArrayList<Tank> tanks = new ArrayList<>();
+    Tank myTank = new Tank(r.nextInt(GAME_WIDTH), r.nextInt(GAME_HEIGHT), DIR.UP, myTankSpeed, Group.GOOD, this);
+    Map<UUID, Tank> tanks = new HashMap<>();
 
     ArrayList<Explode> explodes = new ArrayList<>();
 
-    public TankFrame() {
+    public Tank getMainTank() {
+        return this.myTank;
+    }
+    public TankFrame(){
         setSize(GAME_WIDTH, GAME_HEIGHT);
         setResizable(false);
         setTitle("tank war");
@@ -61,12 +69,14 @@ public class TankFrame extends Frame {
         g.setColor(c);
         myTank.paint(g);
         // use b.paint(g) will have the concurrent issue. since use the iterator will have the concurrent issue!!!!
-        for (int i = 0; i < tanks.size(); i++) {
-            tanks.get(i).paint(g);
-        }
+//        for (int i = 0; i < tanks.size(); i++) {
+//            tanks.get(i).paint(g);
+//        }
         for (int i = 0; i < bullets.size(); i++) {
             bullets.get(i).paint(g);
         }
+        // java 8 stream api
+        tanks.values().stream().forEach(e -> e.paint(g));
 
         for (int i = 0; i < explodes.size(); i++) {
             explodes.get(i).paint(g);
@@ -82,8 +92,16 @@ public class TankFrame extends Frame {
                 bullets.get(i).collideWith(tanks.get(j));
             }
         }
-
     }
+
+    public void addTank(Tank t) {
+        tanks.put(t.getId(), t);
+    }
+
+    public Tank findByUUID(UUID id) {
+        return tanks.get(id);
+    }
+
 
     class MyKeyListener extends KeyAdapter {
         boolean bL = false;

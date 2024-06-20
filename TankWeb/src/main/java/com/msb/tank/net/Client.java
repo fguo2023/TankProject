@@ -1,19 +1,19 @@
 package com.msb.tank.net;
 
-import com.msb.tank.Tank;
 import com.msb.tank.TankFrame;
 import io.netty.bootstrap.Bootstrap;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.util.ReferenceCountUtil;
 
 public class Client {
+    public static final Client INSTANCE = new Client();
     private Channel channel = null;
 
+    private Client(){
+
+    }
     public void connect() {
         // 线程池
         EventLoopGroup group = new NioEventLoopGroup(1);
@@ -23,6 +23,7 @@ public class Client {
             ChannelFuture f = b.group(group)
                     .channel(NioSocketChannel.class)
                     .handler(new ClientChannelInitializer())
+                   // .option(ChannelOption.TCP_NODELAY, true)
                     .connect("localhost", 8888)
                     .addListener(new ChannelFutureListener() {
                         @Override
@@ -44,13 +45,12 @@ public class Client {
         }
     }
 
-    public void send(String msg) {
-        ByteBuf buf = Unpooled.copiedBuffer(msg.getBytes());
-        channel.writeAndFlush(buf);
+    public void send(Msg msg) {
+        channel.writeAndFlush(msg);
     }
 
     public void closeConnect() {
-        this.send("_bye_");
+        //this.send("_bye_");
     }
 }
 
@@ -58,8 +58,8 @@ class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ch.pipeline().
-                addLast(new TankJoinMsgEncoder()).
-                addLast(new TankJoinMsgDecoder()).
+                addLast(new MsgEncoder()).
+                addLast(new MsgDecoder()).
                 addLast(new ClientHandler());
     }
 }
@@ -72,7 +72,7 @@ class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
 //        super.channelRead(ctx, msg);
 //    }
 //}
-class ClientHandler extends SimpleChannelInboundHandler<TankJoinMsg> {
+class ClientHandler extends SimpleChannelInboundHandler<Msg> {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // channel 第一次连上可用，写出一个字符串
@@ -83,12 +83,8 @@ class ClientHandler extends SimpleChannelInboundHandler<TankJoinMsg> {
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, TankJoinMsg msg) throws Exception {
-        if (msg.id.equals(TankFrame.INSTANCE.getMainTank().getId()) || TankFrame.INSTANCE.findByUUID(msg.id) != null)return;
-        System.out.println(msg); // read the TankJoinMsg to th sever
-        Tank t = new Tank(msg);
-        TankFrame.INSTANCE.addTank(t);
-        // send a new TankJoinMsg to the new joined tank
-        ctx.writeAndFlush(new TankJoinMsg(TankFrame.INSTANCE.getMainTank()));
+    protected void channelRead0(ChannelHandlerContext ctx, Msg msg) throws Exception {
+        System.out.println(msg);
+        msg.handle();
     }
 }

@@ -23,7 +23,7 @@ public class Main {
             }
         }).start();
 
-        Client client = new Client();
+        Client client = Client.INSTANCE;
         client.connect();
     }
 }

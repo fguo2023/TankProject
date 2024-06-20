@@ -1,5 +1,7 @@
 package com.msb.tank;
 
+import com.msb.tank.net.BulletNewMsg;
+import com.msb.tank.net.Client;
 import com.msb.tank.net.TankJoinMsg;
 
 import java.awt.*;
@@ -7,21 +9,19 @@ import java.util.Random;
 import java.util.UUID;
 
 public class Tank {
-
     UUID id = UUID.randomUUID();
 
     public UUID getId() {
         return id;
     }
 
-
     private int x, y;
     private DIR dir = DIR.DOWN;
+    private boolean moving = false;
     public static final int WIDTH = ResourceMgr.goodTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.goodTankU.getHeight();
     private static final int SPEED = PropertyMgr.getIntValue(Constants.TANK_SPEED);
     private Random random = new Random();
-
     Rectangle rect = new Rectangle();
 
     // private int speed =  SPEED;
@@ -47,7 +47,6 @@ public class Tank {
         this.moving = moving;
     }
 
-    private boolean moving = true;
 
     public int getX() {
         return x;
@@ -87,7 +86,7 @@ public class Tank {
         this.tf = tf;
     }
 
-    public Tank(TankJoinMsg msg){
+    public Tank(TankJoinMsg msg) {
         this.x = msg.x;
         this.y = msg.y;
         this.dir = msg.dir;
@@ -102,12 +101,20 @@ public class Tank {
     }
 
     public void paint(Graphics g) {
-        if (!living) tf.tanks.remove(this);
-
+       // if (!living) tf.tanks.remove(this);
         Color c = g.getColor();
         g.setColor(Color.yellow);
-        g.drawString(id.toString(), this.x, this.y - 10);
+        g.drawString("live" + living, x, y - 10);
         g.setColor(c);
+
+        if (!living) {
+            moving = false;
+            Color cc = g.getColor();
+            g.setColor(Color.WHITE);
+            g.drawRect(x, y, WIDTH, HEIGHT);
+            g.setColor(cc);
+            return;
+        }
 
         switch (dir) {
             case LEFT:
@@ -127,7 +134,9 @@ public class Tank {
     }
 
     private void move() {
-        if (!moving) return;
+        if (!living) return;
+        if(!moving) return;
+
         switch (dir) {
             case DOWN:
                 y -= SPEED;
@@ -164,16 +173,29 @@ public class Tank {
     }
 
     private void randomDir() {
-        this.dir = DIR.values()[random.nextInt(4)];
+        this.dir = DIR.values()[random.nextInt(DIR.values().length)];
     }
 
     public void fire() {
         int bX = this.x + Tank.WIDTH / 2 - Bullet.WIDTH / 2;
         int bY = this.y + Tank.HEIGHT / 2 - Bullet.HEIGHT / 2;
-        tf.bullets.add(new Bullet(bX, bY, this.dir, this.group, this.tf));
+        Bullet b = new Bullet(this.id, bX, bY, this.dir, this.group, this.tf);
+
+        TankFrame.INSTANCE.addBullet(b);
+
+        Client.INSTANCE.send(new BulletNewMsg(b));
+
+        //tf.bullets.add();
     }
 
     public void die() {
         this.living = false;
+        int eX = this.getX() + Tank.WIDTH / 2 - Explode.WIDTH / 2;
+        int eY = this.getY() + Tank.HEIGHT / 2 - Explode.HEIGHT / 2;
+        TankFrame.INSTANCE.explodes.add(new Explode(eX, eY));
+    }
+
+    public boolean isLiving() {
+        return this.living;
     }
 }

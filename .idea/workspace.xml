@@ -4,20 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="update the master branch for the tank project">
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/ServerFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsgDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsgEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TankWeb/src/test/java/TestTankJoinMsg.java" afterDir="false" />
+    <list default="true" id="d764c4e1-31fc-4893-b1be-e69cad40d6da" name="Changes" comment="add multiple tanks to communicate with each other.">
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/BulletNewMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Msg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/MsgDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/MsgEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/MsgType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankDieMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankDirChangeMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankStartMovingMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankStopMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/test/java/TestBulletNewMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/test/java/TestTankStartMovingMsgCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TankWeb/src/test/java/TestTankStopMsg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Explode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsgDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/main/java/com/msb/tank/net/TankJoinMsgEncoder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TankWeb/src/main/resources/config" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/main/resources/config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TankWeb/src/test/java/TestTankJoinMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/TankWeb/src/test/java/TestTankJoinMsg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,39 +119,13 @@
       <recent name="com.msb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.msb.tank.Main (1)">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.tank.Main" />
-      <module name="TankProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.tank.net.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.com.msb.tank.Main (2)">
     <configuration name="ServerFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.tank.net.ServerFrame" />
       <module name="TankWeb" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.msb.tank.net.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.msb.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.Main" />
-      <module name="TankProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,11 +159,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTankJoinMsg.testDecoder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBulletNewMsg.testDecode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TankWeb" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTankJoinMsg" />
-      <option name="METHOD_NAME" value="testDecoder" />
+      <option name="MAIN_CLASS_NAME" value="TestBulletNewMsg" />
+      <option name="METHOD_NAME" value="testDecode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBulletNewMsg.testEncoder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TankWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBulletNewMsg" />
+      <option name="METHOD_NAME" value="testEncoder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,21 +189,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTankStartMovingMsgCodec.testEncoder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TankWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTankStartMovingMsgCodec" />
+      <option name="METHOD_NAME" value="testEncoder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.com.msb.tank.Main (2)" />
       <item itemvalue="Application.com.msb.tank.Main (1)" />
       <item itemvalue="Application.ServerFrame" />
-      <item itemvalue="Application.com.msb.Main" />
-      <item itemvalue="JUnit.TestTankJoinMsg.testDecoder" />
+      <item itemvalue="JUnit.TestBulletNewMsg.testDecode" />
+      <item itemvalue="JUnit.TestBulletNewMsg.testEncoder" />
+      <item itemvalue="JUnit.TestTankStartMovingMsgCodec.testEncoder" />
       <item itemvalue="JUnit.TestTankJoinMsg.testEncoder" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ServerFrame" />
-        <item itemvalue="Application.com.msb.tank.Main (1)" />
-        <item itemvalue="JUnit.TestTankJoinMsg.testDecoder" />
+        <item itemvalue="JUnit.TestBulletNewMsg.testDecode" />
+        <item itemvalue="JUnit.TestBulletNewMsg.testEncoder" />
+        <item itemvalue="JUnit.TestTankStartMovingMsgCodec.testEncoder" />
         <item itemvalue="JUnit.TestTankJoinMsg.testEncoder" />
-        <item itemvalue="Application.com.msb.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718326486640</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add multiple tanks to communicate with each other.">
+      <created>1718515717004</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718515717004</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,7 +386,8 @@
     <MESSAGE value="paint a explosion" />
     <MESSAGE value="include ImageUtil file." />
     <MESSAGE value="update the master branch for the tank project" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the master branch for the tank project" />
+    <MESSAGE value="add multiple tanks to communicate with each other." />
+    <option name="LAST_COMMIT_MESSAGE" value="add multiple tanks to communicate with each other." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -380,6 +395,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" log-message="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="4" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,12 +3,13 @@ package com.msb.tank.net;
 import com.msb.tank.DIR;
 import com.msb.tank.Group;
 import com.msb.tank.Tank;
+import com.msb.tank.TankFrame;
 
 import java.io.*;
 import java.util.UUID;
 
 // supposed the UUID should be created generated from the server, then the UUID will be the unique
-public class TankJoinMsg {
+public class TankJoinMsg extends Msg {
     public int x, y; // one int 4 bytes
     public DIR dir;
     public boolean moving;
@@ -16,7 +17,7 @@ public class TankJoinMsg {
     public UUID id;
 
     public TankJoinMsg(Tank t) {
-        this.x = t.getX() ;
+        this.x = t.getX();
         this.y = t.getY();
         this.dir = t.getDir();
         this.moving = t.isMoving();
@@ -36,13 +37,38 @@ public class TankJoinMsg {
     public TankJoinMsg() {
     }
 
+    @Override
     public void parse(byte[] bytes) {
-        //DataInputStream dis = new DataInputStream(new ByteArrayInputStream());
+        // use bytes to and convert to the TankJoinMsg
+        // read the byte[] one by one that we need to use DataInputStream, first convert the bytes to the ByteArrayInputStream to be able to parse to the DataInputStream
+        DataInputStream dis = new DataInputStream(new ByteArrayInputStream(bytes));
+        try {
+            this.x = dis.readInt();
+            this.y = dis.readInt();
+            this.dir = DIR.values()[dis.readInt()];
+            this.moving = dis.readBoolean();
+            this.group = Group.values()[dis.readInt()];
+            this.id = new UUID(dis.readLong(), dis.readLong());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                dis.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public MsgType getMsgType() {
+        return MsgType.TankJoin;
     }
 
     // 转换成字节数组
     // 也可以用ByteBuf 来写，但是如果将来不用netty，就得重写
     // 用数字往外传都是4个字节，如果都用字符串往外传效率低
+    @Override
     public byte[] toBytes() {
         ByteArrayOutputStream baos = null;
         DataOutputStream dos = null;
@@ -138,5 +164,16 @@ public class TankJoinMsg {
                 ", group=" + group +
                 ", id=" + id +
                 '}';
+    }
+
+    @Override
+    public void handle() {
+        if (this.id.equals(TankFrame.INSTANCE.getMainTank().getId()) || TankFrame.INSTANCE.findTankByUUID(this.id) != null)
+            return;
+        System.out.println(this); // read the TankJoinMsg to th sever
+        Tank t = new Tank(this);
+        TankFrame.INSTANCE.addTank(t);
+        // send a new TankJoinMsg to the new joined tank
+        Client.INSTANCE.send(new TankJoinMsg(TankFrame.INSTANCE.getMainTank()));
     }
 }

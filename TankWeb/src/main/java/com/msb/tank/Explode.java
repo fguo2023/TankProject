@@ -9,15 +9,15 @@ public class Explode {
     private int step = 0;
     private TankFrame tf = null;
 
-    public Explode(int x, int y, TankFrame tf) {
+    public Explode(int x, int y) {
         this.x = x;
         this.y = y;
-        this.tf = tf;
     }
 
     public void paint(Graphics g) {
         g.drawImage(ResourceMgr.explodes[step++ % ResourceMgr.explodes.length], x, y, null);
-        if (step >= ResourceMgr.explodes.length)
+        //g.drawImage(ResourceMgr.explodes[step++], x, y, null);
+        if (step >= ResourceMgr.explodes.length && tf.explodes != null)
             tf.explodes.remove(this);
     }
 }
